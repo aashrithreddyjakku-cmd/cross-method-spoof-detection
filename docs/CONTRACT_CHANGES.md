@@ -1,0 +1,1 @@
+v1.0 - contracts as in the three PDFs - 17 Oct 2026
