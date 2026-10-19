@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spoofdet"
+version = "0.1.0"
+description = "Cross-method generalizable synthetic speech detection with CNNs on mel-spectrograms"
+requires-python = ">=3.9"
+
+[tool.setuptools.packages.find]
+where = ["src"]

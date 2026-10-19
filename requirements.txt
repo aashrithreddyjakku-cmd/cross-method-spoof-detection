@@ -1,0 +1,13 @@
+numpy
+scipy
+pandas
+scikit-learn
+librosa
+soundfile
+pyyaml
+tqdm
+matplotlib
+torch
+gradio
+pytest
+tabulate

@@ -1,0 +1,7 @@
+exp_id: p0_smallcnn_mel64_s1          # unique; also the folder name in checkpoints/ and results/scores/
+model: {name: smallcnn, kwargs: {}}   # smallcnn | lcnn | resnet18 | vggish_cbam
+feat_id: mel64_w400
+protocol: P0_official                 # folder under splits/ containing train.csv and val.csv
+norm: utt                             # none | utt | utt_band | global
+augment: {freq_mask: 8, time_mask: 40, n_masks: 2}    # {} or null = no augmentation
+train: {epochs: 30, batch_size: 64, lr: 0.001, weight_decay: 0.0001, patience: 6, seed: 1, amp: true, num_workers: 2}

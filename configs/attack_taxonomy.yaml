@@ -1,0 +1,11 @@
+# Attack taxonomy for ASVspoof 2019 LA (our grouping by waveform-generation stage).
+# Source of attack descriptions: ASVspoof 2019 database paper (arXiv 1911.01601), Table of LA attacks.
+# Families are OUR taxonomy; edit here and re-run scripts/build_manifest.py + scripts/make_splits.py.
+canonical:            # attacks that are the same algorithm as another attack id
+  A16: A04
+  A19: A06
+families:
+  neural_vocoder:        [A01, A08, A10, A12, A15]
+  source_filter_vocoder: [A02, A03, A05, A07, A09, A14, A18]
+  waveform_modification: [A04, A06, A13, A17]
+  griffin_lim:           [A11]

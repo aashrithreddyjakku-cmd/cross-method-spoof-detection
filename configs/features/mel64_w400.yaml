@@ -1,0 +1,13 @@
+feat_id: mel64_w400        # MUST equal the file name (without .yaml)
+sr: 16000
+clip_seconds: 4.0
+n_fft: 512
+win_length: 400            # 25 ms
+hop_length: 160            # 10 ms  -> 401 frames for 4 s
+n_mels: 64
+f_min: 20
+f_max: 8000
+power: 2.0
+top_db: 80.0               # dynamic range clip (dB below the clip's own max)
+trim_silence: false
+trim_top_db: 30

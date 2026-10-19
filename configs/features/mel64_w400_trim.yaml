@@ -1,0 +1,13 @@
+feat_id: mel64_w400_trim
+sr: 16000
+clip_seconds: 4.0
+n_fft: 512
+win_length: 400
+hop_length: 160
+n_mels: 64
+f_min: 20
+f_max: 8000
+power: 2.0
+top_db: 80.0
+trim_silence: true
+trim_top_db: 30
