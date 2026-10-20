@@ -102,8 +102,8 @@ python scripts/union_splits.py
 - `features/mel64_w400/feats.npy`: `1ce6cd19e08353bf8f2d639e69b513b58568b76331cba7054e05ba07edf95af8`
 
 ## Sharing
-Private Kaggle dataset `<user>/spoofdet-data-v1` (`python scripts/package_kaggle.py --user <user>` → upload; about 1.7 GB). It
+Private Kaggle dataset `yrk2005/spoofdet-data-v1` (`python scripts/package_kaggle.py --user yrk2005` → upload; about 1.7 GB). It
 contains `manifests/` and `features/` only. **No raw audio** (licence). In notebooks set
 `SPOOFDET_DATA=/kaggle/input/spoofdet-data-v1`. Teammates can instead rebuild the identical data locally in about 15 minutes
 with `download_subset.py` + `run_data_pipeline.sh --subset` (same seed → same files and the same checksums for master.csv/splits).
-Splits are versioned in git (commit: fill in after the PR).
+Splits are versioned in git (commit: `d3893af` on branch `a/data`).
