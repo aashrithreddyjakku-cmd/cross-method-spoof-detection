@@ -104,7 +104,7 @@ for p in sorted(out.rglob("*.csv")):
     if p.name == "split_summary.csv":
         continue
     d = pd.read_csv(p)
-    rows.append(dict(file=str(p.relative_to(out)), n=len(d), bonafide=int((d.label == 0).sum()),
+    rows.append(dict(file=p.relative_to(out).as_posix(), n=len(d), bonafide=int((d.label == 0).sum()),
                      spoof=int((d.label == 1).sum()), n_speakers=d.speaker_id.nunique(),
                      methods=";".join(sorted(d[d.label == 1].method_id.unique()))))
 pd.DataFrame(rows).to_csv(out / "split_summary.csv", index=False)
