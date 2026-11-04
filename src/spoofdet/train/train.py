@@ -1,6 +1,8 @@
 """Train one experiment.   python -m spoofdet.train.train configs/experiments/<exp>.yaml [--set train.epochs=2 ...]"""
 import argparse
 import copy
+import platform
+import subprocess
 import time
 from pathlib import Path
 
@@ -32,6 +34,14 @@ def yaml_value(v):
     return yaml.safe_load(v)
 
 
+def git_commit() -> str:
+    try:
+        r = subprocess.run(["git", "rev-parse", "--short", "HEAD"], cwd=paths.ROOT, capture_output=True, text=True)
+        return r.stdout.strip() or "unknown"
+    except OSError:
+        return "unknown"
+
+
 @torch.no_grad()
 def run_eval(model, loader, device):
     model.eval(); scores, labels = [], []
@@ -55,6 +65,8 @@ def main():
     device = "cuda" if torch.cuda.is_available() else "cpu"
     out = paths.CKPT / exp_id; out.mkdir(parents=True, exist_ok=True)
     save_yaml(cfg, out / "config.yaml")
+    save_yaml(dict(commit=git_commit(), host=platform.node(), device=device, threads=torch.get_num_threads()),
+              out / "run_info.yaml")
 
     store = FeatureStore(paths.FEATURES / cfg["feat_id"])
     split_dir = paths.SPLITS / cfg["protocol"]

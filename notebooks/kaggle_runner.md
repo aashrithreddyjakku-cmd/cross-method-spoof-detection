@@ -1,13 +1,17 @@
 # Kaggle runner (copy each block into its own notebook cell)
+Before starting: Settings -> Accelerator GPU, Internet On; Add Input -> dataset `yrk2005/spoofdet-data-v1`
+(its owner must share it with your account). If `features/` is not found, run `!find /kaggle/input -name feats.npy` and point
+SPOOFDET_DATA at the folder above `features/`.
 
 ## Cell 1 - code
 ```python
 import os
 from kaggle_secrets import UserSecretsClient           # Add-ons -> Secrets -> add GITHUB_TOKEN
 tok = UserSecretsClient().get_secret("GITHUB_TOKEN")
-!git clone https://{tok}@github.com/<ORG>/cross-method-spoof-detection.git /kaggle/working/repo
+BRANCH = "main"                                        # the branch that holds the merged code of A, B and C
+!git clone https://{tok}@github.com/aashrithreddyjakku-cmd/cross-method-spoof-detection.git /kaggle/working/repo
 %cd /kaggle/working/repo
-!git checkout main && git log -1 --oneline
+!git checkout {BRANCH} && git log -1 --oneline
 !pip install -q -e . librosa soundfile pyyaml tqdm scikit-learn tabulate
 ```
 ## Cell 2 - environment

@@ -14,7 +14,7 @@ from sklearn.svm import SVC
 
 from ..common import paths
 from ..common.constants import SCORE_COLUMNS
-from ..common.io import read_manifest
+from ..common.io import read_manifest, save_yaml
 from ..common.metrics_core import compute_eer
 from ..data.features import FeatureStore
 
@@ -50,8 +50,12 @@ def main():
     for name in ["val"] + a.tests:
         df = read_manifest(sd / f"{name}.csv")
         df["score"] = pipe.predict_proba(mfcc_stats(store, df.utt_id))[:, 1]
-        df[SCORE_COLUMNS].to_csv(out / f"{name}.csv", index=False)
+        out_name = "itw" if name == "test_itw" else name          # standard test name of the score-file contract
+        df[SCORE_COLUMNS].to_csv(out / f"{out_name}.csv", index=False)
         print(f"{name:12s} n={len(df):6d} EER={compute_eer(df.score, df.label)[0]*100:6.2f}%")
+    save_yaml(dict(exp_id=a.name, model=dict(name=f"mfcc_{a.clf}", kwargs={}), feat_id=a.feat, protocol=a.protocol,
+                   norm="none", augment={}, train=dict(seed=1)), paths.CKPT / a.name / "config.yaml")   # read by eval.aggregate
+    (out / "DONE").write_text("ok")
 
 
 if __name__ == "__main__":
