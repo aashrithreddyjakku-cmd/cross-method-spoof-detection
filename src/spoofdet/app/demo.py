@@ -14,12 +14,31 @@ from pathlib import Path
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+from ..common import paths
+from ..common.metrics_core import compute_eer
 from ..eval.gradcam import GradCAM, band_occlusion, band_edges_hz
 from ..infer import Detector
 
 
-def build_app(ckpt=None, device="cpu"):
+def validation_threshold(ckpt, scores_root=None):
+    """EER threshold on the experiment's val.csv (the study's decision threshold), or None if it is unavailable."""
+    if ckpt is None:
+        return None
+    val = Path(scores_root or paths.SCORES) / Path(ckpt).expanduser().parent.name / "val.csv"
+    if not val.is_file():
+        return None
+    import pandas as pd
+    df = pd.read_csv(val)
+    return float(compute_eer(df.score, df.label)[1])
+
+
+def build_app(ckpt=None, device="cpu", threshold=None):
     import gradio as gr
+
+    if threshold is None:
+        threshold = validation_threshold(ckpt)
+    threshold_note = "validation EER threshold" if threshold is not None else "default"
+    threshold = 0.5 if threshold is None else min(0.99, max(0.01, round(threshold, 2)))
 
     checkpoint = Path(ckpt).expanduser() if ckpt is not None else None
     unavailable_message = None
@@ -97,13 +116,13 @@ def build_app(ckpt=None, device="cpu"):
             audio = gr.Audio(sources=["upload", "microphone"], type="filepath",
                              label="Speech clip (WAV, FLAC, or MP3)")
             with gr.Column():
-                threshold = gr.Slider(0.05, 0.95, value=0.5, step=0.05,
-                                      label="Decision threshold on P(spoof)")
+                threshold_input = gr.Slider(0.01, 0.99, value=threshold, step=0.01,
+                                            label=f"Decision threshold on P(spoof) (starts at the {threshold_note})")
                 button = gr.Button("Analyze", variant="primary")
         label = gr.Label(label="Class probabilities")
         result = gr.Textbox(label="Result", interactive=False)
         plot = gr.Plot(label="Spectrogram and explanation")
-        button.click(analyse, [audio, threshold], [label, plot, result])
+        button.click(analyse, [audio, threshold_input], [label, plot, result])
     return demo
 
 
@@ -113,8 +132,10 @@ def main():
                         help="Member B checkpoint (default: none; the UI will explain the missing checkpoint)")
     parser.add_argument("--share", action="store_true", help="create a temporary public link")
     parser.add_argument("--device", default="cpu", help="torch device, e.g. cpu or cuda:0")
+    parser.add_argument("--threshold", type=float, default=None,
+                        help="decision threshold (default: EER threshold on the experiment's val.csv)")
     args = parser.parse_args()
-    build_app(args.ckpt, args.device).launch(share=args.share)
+    build_app(args.ckpt, args.device, args.threshold).launch(share=args.share)
 
 
 if __name__ == "__main__":
