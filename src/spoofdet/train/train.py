@@ -1,6 +1,7 @@
 """Train one experiment.   python -m spoofdet.train.train configs/experiments/<exp>.yaml [--set train.epochs=2 ...]"""
 import argparse
 import copy
+import os
 import platform
 import subprocess
 import time
@@ -35,6 +36,8 @@ def yaml_value(v):
 
 
 def git_commit() -> str:
+    if os.environ.get("SPOOFDET_COMMIT"):             # set on Kaggle, where the code has no .git folder
+        return os.environ["SPOOFDET_COMMIT"]
     try:
         r = subprocess.run(["git", "rev-parse", "--short", "HEAD"], cwd=paths.ROOT, capture_output=True, text=True)
         return r.stdout.strip() or "unknown"
