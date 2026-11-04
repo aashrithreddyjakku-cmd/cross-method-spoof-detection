@@ -6,7 +6,7 @@ No GPU is needed, and each clip takes a few seconds.
 ## What is where
 | What | Where |
 |---|---|
-| Project code (branch `integration/demo`: A's data work + C's evaluation and demo) | `Study\ML\Project\cross-method-spoof-detection` |
+| Project code (branch `b/train`: the work of A, B and C together) | `Study\ML\Project\cross-method-spoof-detection` |
 | One-click launcher | `start_demo.bat` in that folder |
 | Model used in the demo (LCNN, official protocol) | `checkpoints\p0_lcnn_mel64_w400_s1\best.pt` |
 | Demo clips | `C:\spoofdet-data\demo_clips\` |
@@ -19,7 +19,7 @@ No GPU is needed, and each clip takes a few seconds.
 1. In File Explorer, open the project folder and double-click `start_demo.bat`.
 2. Wait until the black window shows `Running on local URL: http://127.0.0.1:7860` (about 20 seconds).
 3. Open `http://127.0.0.1:7860` in a browser.
-4. Set the **Decision threshold slider to 0.10** (see "Why 0.10" below).
+4. Leave the **Decision threshold slider** alone: it starts at the threshold chosen on the validation set.
 
 Closing the black window stops the app. If the browser shows nothing, the black window is closed or still loading.
 
@@ -51,10 +51,6 @@ voices in public. Analyse it without playing it.
 - **Grad-CAM (middle):** the regions that pushed the score towards "spoof".
 - **Mel-band occlusion (right):** how much P(spoof) drops when one frequency band is hidden. A longer bar means that band
   mattered more. A negative bar means hiding the band made the clip look more fake.
-
-### Why 0.10
-The slider starts at 0.50, but our reported accuracy uses the threshold chosen on the validation set, which is 0.118.
-The slider moves in steps of 0.05, so 0.10 is the nearest setting. All five clips give the same verdict at 0.10 and 0.50.
 
 ### Avoid the live microphone unless you present it as a risk
 The app can record, but we have not tested that. A laptop-mic recording is noisy, and on noisy real-world audio this model
