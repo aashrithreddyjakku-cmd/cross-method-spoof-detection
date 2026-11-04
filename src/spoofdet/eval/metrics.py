@@ -6,8 +6,33 @@ from sklearn.metrics import roc_auc_score, confusion_matrix
 from ..common.metrics_core import compute_eer
 
 
+def _validated_inputs(scores, labels):
+    scores = np.asarray(scores, dtype=float)
+    labels = np.asarray(labels)
+    if scores.ndim != 1 or labels.ndim != 1:
+        raise ValueError("scores and labels must be one-dimensional")
+    if len(scores) != len(labels):
+        raise ValueError("scores and labels must have the same length")
+    if not len(labels):
+        raise ValueError("scores and labels must not be empty")
+    if not np.isfinite(scores).all():
+        raise ValueError("scores must contain only finite values")
+    if not np.isin(labels, (0, 1)).all():
+        raise ValueError("labels must use the binary convention 0=bona fide, 1=spoof")
+    return scores, labels.astype(int)
+
+
 def metrics_at_threshold(scores, labels, thr):
-    pred = (np.asarray(scores) >= thr).astype(int)
+    scores, labels = _validated_inputs(scores, labels)
+    if not np.isscalar(thr):
+        raise ValueError("threshold must be a finite scalar")
+    try:
+        thr = float(thr)
+    except (TypeError, ValueError, OverflowError) as exc:
+        raise ValueError("threshold must be a finite scalar") from exc
+    if not np.isfinite(thr):
+        raise ValueError("threshold must be a finite scalar")
+    pred = (scores >= thr).astype(int)
     tn, fp, fn, tp = confusion_matrix(labels, pred, labels=[0, 1]).ravel()
     return dict(tn=int(tn), fp=int(fp), fn=int(fn), tp=int(tp),
                 accuracy=float((tn + tp) / len(labels)),
@@ -17,23 +42,43 @@ def metrics_at_threshold(scores, labels, thr):
 
 def summarize(scores, labels, fixed_thr=0.5):
     """Full metric dict for one set of scores."""
-    scores = np.asarray(scores, float); labels = np.asarray(labels, int)
+    scores, labels = _validated_inputs(scores, labels)
     eer, thr = compute_eer(scores, labels)
     at_eer = metrics_at_threshold(scores, labels, thr)
-    at_fix = metrics_at_threshold(scores, labels, fixed_thr)
+    at_05 = metrics_at_threshold(scores, labels, 0.5)
+    at_fixed = metrics_at_threshold(scores, labels, fixed_thr)
     return dict(n=len(labels), n_bona=int((labels == 0).sum()), n_spoof=int((labels == 1).sum()),
                 eer=eer, eer_thr=thr, auc=float(roc_auc_score(labels, scores)),
-                acc_at_eer=at_eer["accuracy"], acc_at_0p5=at_fix["accuracy"],
+                acc_at_eer=at_eer["accuracy"], far_at_eer=at_eer["far"], frr_at_eer=at_eer["frr"],
+                far_at_0p5=at_05["far"], frr_at_0p5=at_05["frr"], acc_at_0p5=at_05["accuracy"],
+                fixed_thr=float(fixed_thr), acc_at_fixed_thr=at_fixed["accuracy"],
                 tn=at_eer["tn"], fp=at_eer["fp"], fn=at_eer["fn"], tp=at_eer["tp"])
 
 
 def bootstrap_eer_ci(scores, labels, n_boot=1000, alpha=0.05, seed=0):
-    rng = np.random.RandomState(seed); scores = np.asarray(scores); labels = np.asarray(labels)
+    scores, labels = _validated_inputs(scores, labels)
+    if not isinstance(n_boot, (int, np.integer)) or n_boot < 1:
+        raise ValueError("n_boot must be a positive integer")
+    if not np.isscalar(alpha):
+        raise ValueError("alpha must be between 0 and 1")
+    try:
+        alpha = float(alpha)
+    except (TypeError, ValueError, OverflowError) as exc:
+        raise ValueError("alpha must be between 0 and 1") from exc
+    if not np.isfinite(alpha) or not 0 < alpha < 1:
+        raise ValueError("alpha must be between 0 and 1")
+    classes, counts = np.unique(labels, return_counts=True)
+    if len(classes) != 2:
+        raise ValueError("bootstrap EER confidence intervals need both classes")
+    rng = np.random.RandomState(seed)
     vals = []
     for _ in range(n_boot):
-        idx = rng.randint(0, len(labels), len(labels))
-        if len(np.unique(labels[idx])) < 2:
-            continue
+        # Resample within each class so rare spoof/bona-fide examples cannot
+        # make a replicate undefined by removing one class entirely.
+        idx = np.concatenate([
+            rng.choice(np.flatnonzero(labels == cls), size=count, replace=True)
+            for cls, count in zip(classes, counts)
+        ])
         vals.append(compute_eer(scores[idx], labels[idx])[0])
     return float(np.percentile(vals, 100 * alpha / 2)), float(np.percentile(vals, 100 * (1 - alpha / 2)))
 

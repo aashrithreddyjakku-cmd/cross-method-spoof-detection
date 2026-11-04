@@ -24,20 +24,30 @@ def evaluate_scores(df, n_boot=300, val_thr=None):
         s.update(val_thr=val_thr, acc_at_val_thr=m["accuracy"], far_at_val_thr=m["far"], frr_at_val_thr=m["frr"],
                  tn_v=m["tn"], fp_v=m["fp"], fn_v=m["fn"], tp_v=m["tp"])
     s["eer_ci_lo"], s["eer_ci_hi"] = bootstrap_eer_ci(df.score, df.label, n_boot=n_boot)
-    per_m = per_group_eer(df, "method_id") if (df.label == 1).any() else pd.DataFrame()
+    per_m = per_group_eer(df, "method_id", ref_thr=val_thr) if (df.label == 1).any() else pd.DataFrame()
     return s, per_m
 
 
 def eval_experiment(exp_id, n_boot=300):
     rows = []
-    out = paths.TABLES / exp_id; out.mkdir(parents=True, exist_ok=True)
+    score_dir = paths.SCORES / exp_id
+    if not score_dir.is_dir():
+        raise FileNotFoundError(f"score directory does not exist: {score_dir}")
+    score_files = sorted(score_dir.glob("*.csv"))
+    if not score_files:
+        raise FileNotFoundError(f"no score CSV files found in: {score_dir}")
+
     val_thr = None
-    vf = paths.SCORES / exp_id / "val.csv"
+    vf = score_dir / "val.csv"
     if vf.exists():
         v = read_scores(vf)
-        if v.label.nunique() == 2:
-            val_thr = compute_eer(v.score, v.label)[1]
-    for f in sorted((paths.SCORES / exp_id).glob("*.csv")):
+        if v.label.nunique() != 2:
+            raise ValueError(f"validation scores must contain both labels 0 and 1: {vf}")
+        val_thr = compute_eer(v.score, v.label)[1]
+
+    out = paths.TABLES / exp_id
+    out.mkdir(parents=True, exist_ok=True)
+    for f in score_files:
         df = read_scores(f)
         if df.label.nunique() < 2:
             continue
@@ -53,14 +63,24 @@ def eval_experiment(exp_id, n_boot=300):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--exp"); ap.add_argument("--all", action="store_true")
+    group = ap.add_mutually_exclusive_group(required=True)
+    group.add_argument("--exp", help="one experiment ID under results/scores/")
+    group.add_argument("--all", action="store_true", help="evaluate every experiment under results/scores/")
     ap.add_argument("--boot", type=int, default=300)
     a = ap.parse_args()
+    if a.boot < 1:
+        ap.error("--boot must be a positive integer")
+    if a.all and not paths.SCORES.is_dir():
+        raise FileNotFoundError(f"score root does not exist: {paths.SCORES}")
     exps = [d.name for d in sorted(paths.SCORES.iterdir()) if d.is_dir()] if a.all else [a.exp]
+    if not exps:
+        raise FileNotFoundError(f"no experiment score directories found in: {paths.SCORES}")
     rows = []
     for e in exps:
         rows += eval_experiment(e, a.boot)
     res = pd.DataFrame(rows)
+    if res.empty:
+        raise ValueError("no score files containing both labels were found")
     paths.TABLES.mkdir(parents=True, exist_ok=True)
     res.to_csv(paths.TABLES / ("all_results.csv" if a.all else f"{a.exp}_results.csv"), index=False)
     print(res[["exp_id", "test_set", "n", "eer", "auc", "acc_at_eer"]].to_string(index=False))
