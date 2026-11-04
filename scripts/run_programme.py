@@ -126,6 +126,9 @@ def main():
     a = ap.parse_args()
     if a.finish:
         sys.exit(finish())
+    if os.name == "nt" and not a.dry_run:          # no idle sleep while this process runs (a closed lid still sleeps)
+        import ctypes
+        ctypes.windll.kernel32.SetThreadExecutionState(0x80000000 | 0x00000001)
     deadline = time.time() + a.hours * 3600
     env = dict(os.environ, OMP_NUM_THREADS=str(a.threads), MKL_NUM_THREADS=str(a.threads), PYTHONIOENCODING="utf-8")
 
