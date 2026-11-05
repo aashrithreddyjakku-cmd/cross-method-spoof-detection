@@ -1,0 +1,2 @@
+group,n_spoof,eer,auc,detect_rate_at_ref_thr
+A10,25,0.0011389521640091116,0.9999088838268793,1.0

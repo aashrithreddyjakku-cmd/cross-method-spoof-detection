@@ -1,0 +1,12 @@
+model,kind,factor_level,mean,std,count,n_folds,n_seeds
+vggish_cbam,P1_lofo,mel64_w400 | norm=none | aug=True,0.11250620325263029,0.10560681836864762,3,3,1
+vggish_cbam,P1_lofo,mel64_w400 | norm=utt | aug=False,0.134793904064494,0.11758243377658809,3,3,1
+vggish_cbam,P1_lofo,mel64_w400 | norm=utt_band | aug=True,0.1455910510753331,0.11065458876387996,3,3,1
+vggish_cbam,P1_lofo,mel64_w400 | norm=utt | aug=True,0.14861601162768742,0.11538567190999184,3,3,1
+vggish_cbam,P1_lofo,mel40_w400 | norm=utt | aug=True,0.1554129539903748,0.12430077019540488,3,3,1
+vggish_cbam,P1_lofo,mel128_w400 | norm=utt | aug=True,0.15797951259141615,0.13024875914082687,3,3,1
+vggish_cbam,P1_lofo,mel64_w800 | norm=utt | aug=True,0.15823839650780927,0.11735108174893213,3,3,1
+vggish_cbam,P1_lofo,mel64_w200 | norm=utt | aug=True,0.1607690490766767,0.10945523994175153,3,3,1
+vggish_cbam,P1_lofo,mel64_w400 | norm=global | aug=True,0.1681913813032063,0.11114327463909938,3,3,1
+vggish_cbam,P1_lofo,mel80_w400 | norm=utt | aug=True,0.1684145251856061,0.12528013505263752,3,3,1
+vggish_cbam,P1_lofo,mel64_w400_trim | norm=utt | aug=True,0.23940699688912193,0.11406073013671217,3,3,1
