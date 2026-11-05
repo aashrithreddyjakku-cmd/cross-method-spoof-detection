@@ -1,0 +1,20 @@
+exp_id: abl_norm_utt_band_waveform_modification_vggish_cbam
+model:
+  name: vggish_cbam
+  kwargs: {}
+feat_id: mel64_w400
+protocol: P1_lofo/waveform_modification
+norm: utt_band
+augment:
+  freq_mask: 8
+  time_mask: 40
+  n_masks: 2
+train:
+  epochs: 30
+  batch_size: 64
+  lr: 0.001
+  weight_decay: 0.0001
+  patience: 6
+  seed: 1
+  amp: true
+  num_workers: 2

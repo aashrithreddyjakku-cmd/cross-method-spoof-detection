@@ -19,6 +19,7 @@ a = ap.parse_args()
 files = sorted(glob.glob(a.pattern))
 todo = [f for f in files if not (paths.SCORES / load_yaml(f)["exp_id"] / "DONE").exists()]
 print(f"{len(files)} configs match, {len(files) - len(todo)} already done, {len(todo)} to run")
+failed = []
 for i, f in enumerate(todo, 1):
     exp = load_yaml(f)["exp_id"]
     print(f"[{i}/{len(todo)}] {exp}", flush=True)
@@ -27,3 +28,7 @@ for i, f in enumerate(todo, 1):
     t0 = time.time()
     r = subprocess.run([sys.executable, "-m", "spoofdet.train.run_experiment", f] + a.extra)
     print(f"    {'ok' if r.returncode == 0 else 'FAILED'} in {(time.time()-t0)/60:.1f} min", flush=True)
+    if r.returncode:
+        failed.append(exp)
+if failed:
+    sys.exit(f"{len(failed)} run(s) FAILED: {', '.join(failed)}")

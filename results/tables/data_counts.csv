@@ -1,0 +1,5 @@
+dataset,partition,bonafide,spoof
+itw,eval,300,300
+la19,dev,300,360
+la19,eval,900,1300
+la19,train,600,720

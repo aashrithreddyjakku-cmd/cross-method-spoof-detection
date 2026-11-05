@@ -1,0 +1,601 @@
+utt_id,dataset,partition,path,label,attack_id,method_id,method_family,speaker_id,duration_s,orig_sr
+itw__9,itw,eval,in_the_wild/release_in_the_wild/9.wav,0,bonafide,bonafide,bonafide,Alec Guinness,7.9370625,16000
+itw__12,itw,eval,in_the_wild/release_in_the_wild/12.wav,0,bonafide,bonafide,bonafide,Calvin Coolidge,3.8960625,16000
+itw__71,itw,eval,in_the_wild/release_in_the_wild/71.wav,0,bonafide,bonafide,bonafide,Jimmy Carter,3.1730625,16000
+itw__213,itw,eval,in_the_wild/release_in_the_wild/213.wav,0,bonafide,bonafide,bonafide,FDR,2.2580625,16000
+itw__231,itw,eval,in_the_wild/release_in_the_wild/231.wav,1,itw_spoof,itw_spoof,unknown,Frank Sinatra,6.466,16000
+itw__320,itw,eval,in_the_wild/release_in_the_wild/320.wav,0,bonafide,bonafide,bonafide,FDR,3.669,16000
+itw__344,itw,eval,in_the_wild/release_in_the_wild/344.wav,1,itw_spoof,itw_spoof,unknown,Kamala Harris,8.308,16000
+itw__374,itw,eval,in_the_wild/release_in_the_wild/374.wav,1,itw_spoof,itw_spoof,unknown,Christopher Hitchens,8.326,16000
+itw__455,itw,eval,in_the_wild/release_in_the_wild/455.wav,0,bonafide,bonafide,bonafide,Robert Kardashian,3.8390625,16000
+itw__586,itw,eval,in_the_wild/release_in_the_wild/586.wav,1,itw_spoof,itw_spoof,unknown,Robert Kardashian,0.7780625,16000
+itw__725,itw,eval,in_the_wild/release_in_the_wild/725.wav,0,bonafide,bonafide,bonafide,Boris Johnson,1.5790625,16000
+itw__729,itw,eval,in_the_wild/release_in_the_wild/729.wav,0,bonafide,bonafide,bonafide,Billie Eilish,3.6990625,16000
+itw__797,itw,eval,in_the_wild/release_in_the_wild/797.wav,1,itw_spoof,itw_spoof,unknown,Scarlett Johansson,15.021,16000
+itw__904,itw,eval,in_the_wild/release_in_the_wild/904.wav,1,itw_spoof,itw_spoof,unknown,Mr. Rogers,2.202,16000
+itw__974,itw,eval,in_the_wild/release_in_the_wild/974.wav,0,bonafide,bonafide,bonafide,Arnold Schwarzenegger,2.5170625,16000
+itw__1014,itw,eval,in_the_wild/release_in_the_wild/1014.wav,1,itw_spoof,itw_spoof,unknown,Martin Luther King,3.442,16000
+itw__1028,itw,eval,in_the_wild/release_in_the_wild/1028.wav,1,itw_spoof,itw_spoof,unknown,Tucker Carlson,2.1710625,16000
+itw__1059,itw,eval,in_the_wild/release_in_the_wild/1059.wav,1,itw_spoof,itw_spoof,unknown,Jerry Seinfeld,3.623,16000
+itw__1061,itw,eval,in_the_wild/release_in_the_wild/1061.wav,1,itw_spoof,itw_spoof,unknown,Orson Welles,5.4770625,16000
+itw__1092,itw,eval,in_the_wild/release_in_the_wild/1092.wav,1,itw_spoof,itw_spoof,unknown,Bernie Sanders,4.769,16000
+itw__1114,itw,eval,in_the_wild/release_in_the_wild/1114.wav,1,itw_spoof,itw_spoof,unknown,Jerry Seinfeld,4.189,16000
+itw__1121,itw,eval,in_the_wild/release_in_the_wild/1121.wav,1,itw_spoof,itw_spoof,unknown,Alec Guinness,8.8320625,16000
+itw__1154,itw,eval,in_the_wild/release_in_the_wild/1154.wav,0,bonafide,bonafide,bonafide,Arnold Schwarzenegger,4.365,16000
+itw__1159,itw,eval,in_the_wild/release_in_the_wild/1159.wav,0,bonafide,bonafide,bonafide,Kamala Harris,3.088,16000
+itw__1184,itw,eval,in_the_wild/release_in_the_wild/1184.wav,1,itw_spoof,itw_spoof,unknown,Dwight Eisenhower,1.865,16000
+itw__1191,itw,eval,in_the_wild/release_in_the_wild/1191.wav,1,itw_spoof,itw_spoof,unknown,Orson Welles,13.072,16000
+itw__1299,itw,eval,in_the_wild/release_in_the_wild/1299.wav,0,bonafide,bonafide,bonafide,George Carlin,2.4560625,16000
+itw__1300,itw,eval,in_the_wild/release_in_the_wild/1300.wav,1,itw_spoof,itw_spoof,unknown,Mr. Rogers,2.3690625,16000
+itw__1338,itw,eval,in_the_wild/release_in_the_wild/1338.wav,1,itw_spoof,itw_spoof,unknown,Alan Watts,2.229,16000
+itw__1358,itw,eval,in_the_wild/release_in_the_wild/1358.wav,0,bonafide,bonafide,bonafide,Orson Welles,0.744,16000
+itw__1384,itw,eval,in_the_wild/release_in_the_wild/1384.wav,0,bonafide,bonafide,bonafide,Calvin Coolidge,3.388,16000
+itw__1406,itw,eval,in_the_wild/release_in_the_wild/1406.wav,0,bonafide,bonafide,bonafide,Martin Luther King,2.67,16000
+itw__1453,itw,eval,in_the_wild/release_in_the_wild/1453.wav,1,itw_spoof,itw_spoof,unknown,Winston Churchill,3.186,16000
+itw__1496,itw,eval,in_the_wild/release_in_the_wild/1496.wav,1,itw_spoof,itw_spoof,unknown,Bill Burr,17.444,16000
+itw__1559,itw,eval,in_the_wild/release_in_the_wild/1559.wav,1,itw_spoof,itw_spoof,unknown,Mr. Rogers,2.5750625,16000
+itw__1614,itw,eval,in_the_wild/release_in_the_wild/1614.wav,1,itw_spoof,itw_spoof,unknown,Gilbert Gottfried,16.0670625,16000
+itw__1664,itw,eval,in_the_wild/release_in_the_wild/1664.wav,1,itw_spoof,itw_spoof,unknown,Adam Driver,3.483,16000
+itw__1734,itw,eval,in_the_wild/release_in_the_wild/1734.wav,0,bonafide,bonafide,bonafide,Bill Burr,15.5140625,16000
+itw__1737,itw,eval,in_the_wild/release_in_the_wild/1737.wav,1,itw_spoof,itw_spoof,unknown,FDR,12.0420625,16000
+itw__1741,itw,eval,in_the_wild/release_in_the_wild/1741.wav,1,itw_spoof,itw_spoof,unknown,The Notorious B.I.G.,0.8170625,16000
+itw__1753,itw,eval,in_the_wild/release_in_the_wild/1753.wav,1,itw_spoof,itw_spoof,unknown,Boris Johnson,2.023,16000
+itw__1779,itw,eval,in_the_wild/release_in_the_wild/1779.wav,1,itw_spoof,itw_spoof,unknown,FDR,11.42,16000
+itw__1830,itw,eval,in_the_wild/release_in_the_wild/1830.wav,0,bonafide,bonafide,bonafide,Ronald Reagan,1.7630625,16000
+itw__1863,itw,eval,in_the_wild/release_in_the_wild/1863.wav,1,itw_spoof,itw_spoof,unknown,Bob Ross,9.1190625,16000
+itw__1868,itw,eval,in_the_wild/release_in_the_wild/1868.wav,0,bonafide,bonafide,bonafide,Harry Truman,1.5530625,16000
+itw__1879,itw,eval,in_the_wild/release_in_the_wild/1879.wav,0,bonafide,bonafide,bonafide,Barack Obama,4.2740625,16000
+itw__1911,itw,eval,in_the_wild/release_in_the_wild/1911.wav,0,bonafide,bonafide,bonafide,Tucker Carlson,5.845,16000
+itw__1969,itw,eval,in_the_wild/release_in_the_wild/1969.wav,0,bonafide,bonafide,bonafide,Jerry Seinfeld,3.063,16000
+itw__2040,itw,eval,in_the_wild/release_in_the_wild/2040.wav,0,bonafide,bonafide,bonafide,Lyndon Johnson,2.4680625,16000
+itw__2062,itw,eval,in_the_wild/release_in_the_wild/2062.wav,1,itw_spoof,itw_spoof,unknown,Milton Friedman,3.3780625,16000
+itw__2261,itw,eval,in_the_wild/release_in_the_wild/2261.wav,0,bonafide,bonafide,bonafide,Adam Driver,2.821,16000
+itw__2271,itw,eval,in_the_wild/release_in_the_wild/2271.wav,1,itw_spoof,itw_spoof,unknown,John Cleese,21.8060625,16000
+itw__2373,itw,eval,in_the_wild/release_in_the_wild/2373.wav,0,bonafide,bonafide,bonafide,Nelson Mandela,2.8750625,16000
+itw__2570,itw,eval,in_the_wild/release_in_the_wild/2570.wav,0,bonafide,bonafide,bonafide,Bill Clinton,1.8110625,16000
+itw__2726,itw,eval,in_the_wild/release_in_the_wild/2726.wav,0,bonafide,bonafide,bonafide,2Pac,1.395,16000
+itw__2847,itw,eval,in_the_wild/release_in_the_wild/2847.wav,1,itw_spoof,itw_spoof,unknown,Robert Kardashian,23.0490625,16000
+itw__2934,itw,eval,in_the_wild/release_in_the_wild/2934.wav,0,bonafide,bonafide,bonafide,Donald Trump,2.9150625,16000
+itw__3092,itw,eval,in_the_wild/release_in_the_wild/3092.wav,1,itw_spoof,itw_spoof,unknown,Alan Watts,3.3540625,16000
+itw__3381,itw,eval,in_the_wild/release_in_the_wild/3381.wav,1,itw_spoof,itw_spoof,unknown,Kamala Harris,4.2160625,16000
+itw__3395,itw,eval,in_the_wild/release_in_the_wild/3395.wav,1,itw_spoof,itw_spoof,unknown,Christopher Hitchens,2.692,16000
+itw__3412,itw,eval,in_the_wild/release_in_the_wild/3412.wav,0,bonafide,bonafide,bonafide,Queen Elizabeth II,3.3740625,16000
+itw__3492,itw,eval,in_the_wild/release_in_the_wild/3492.wav,1,itw_spoof,itw_spoof,unknown,Lyndon Johnson,7.805,16000
+itw__3501,itw,eval,in_the_wild/release_in_the_wild/3501.wav,1,itw_spoof,itw_spoof,unknown,Louis Farrakhan,7.7780625,16000
+itw__3514,itw,eval,in_the_wild/release_in_the_wild/3514.wav,1,itw_spoof,itw_spoof,unknown,Martin Luther King,11.308,16000
+itw__3535,itw,eval,in_the_wild/release_in_the_wild/3535.wav,1,itw_spoof,itw_spoof,unknown,Norm MacDonald,24.2780625,16000
+itw__3545,itw,eval,in_the_wild/release_in_the_wild/3545.wav,0,bonafide,bonafide,bonafide,Boris Johnson,19.981,16000
+itw__3550,itw,eval,in_the_wild/release_in_the_wild/3550.wav,1,itw_spoof,itw_spoof,unknown,Harry Truman,4.945,16000
+itw__3595,itw,eval,in_the_wild/release_in_the_wild/3595.wav,0,bonafide,bonafide,bonafide,Jeff Goldblum,2.8330625,16000
+itw__3672,itw,eval,in_the_wild/release_in_the_wild/3672.wav,1,itw_spoof,itw_spoof,unknown,Bob Ross,1.7050625,16000
+itw__3681,itw,eval,in_the_wild/release_in_the_wild/3681.wav,0,bonafide,bonafide,bonafide,George Carlin,2.64,16000
+itw__3936,itw,eval,in_the_wild/release_in_the_wild/3936.wav,1,itw_spoof,itw_spoof,unknown,Lyndon Johnson,12.9640625,16000
+itw__3986,itw,eval,in_the_wild/release_in_the_wild/3986.wav,1,itw_spoof,itw_spoof,unknown,JFK,17.0170625,16000
+itw__4071,itw,eval,in_the_wild/release_in_the_wild/4071.wav,0,bonafide,bonafide,bonafide,Ronald Reagan,4.5960625,16000
+itw__4199,itw,eval,in_the_wild/release_in_the_wild/4199.wav,0,bonafide,bonafide,bonafide,Mr. Rogers,2.7370625,16000
+itw__4243,itw,eval,in_the_wild/release_in_the_wild/4243.wav,1,itw_spoof,itw_spoof,unknown,Dave Chappelle,6.494,16000
+itw__4293,itw,eval,in_the_wild/release_in_the_wild/4293.wav,1,itw_spoof,itw_spoof,unknown,Bill Clinton,2.045,16000
+itw__4305,itw,eval,in_the_wild/release_in_the_wild/4305.wav,1,itw_spoof,itw_spoof,unknown,Kanye West,1.514,16000
+itw__4339,itw,eval,in_the_wild/release_in_the_wild/4339.wav,1,itw_spoof,itw_spoof,unknown,Louis C.K.,2.821,16000
+itw__4384,itw,eval,in_the_wild/release_in_the_wild/4384.wav,1,itw_spoof,itw_spoof,unknown,George Carlin,17.4120625,16000
+itw__4409,itw,eval,in_the_wild/release_in_the_wild/4409.wav,0,bonafide,bonafide,bonafide,Bill Burr,1.4740625,16000
+itw__4413,itw,eval,in_the_wild/release_in_the_wild/4413.wav,1,itw_spoof,itw_spoof,unknown,Scarlett Johansson,8.9980625,16000
+itw__4541,itw,eval,in_the_wild/release_in_the_wild/4541.wav,0,bonafide,bonafide,bonafide,Mitch Hedberg,14.022,16000
+itw__4642,itw,eval,in_the_wild/release_in_the_wild/4642.wav,1,itw_spoof,itw_spoof,unknown,George W. Bush,3.871,16000
+itw__4805,itw,eval,in_the_wild/release_in_the_wild/4805.wav,1,itw_spoof,itw_spoof,unknown,Winston Churchill,19.494,16000
+itw__4843,itw,eval,in_the_wild/release_in_the_wild/4843.wav,0,bonafide,bonafide,bonafide,John Cleese,5.776,16000
+itw__4917,itw,eval,in_the_wild/release_in_the_wild/4917.wav,0,bonafide,bonafide,bonafide,George W. Bush,4.49,16000
+itw__5098,itw,eval,in_the_wild/release_in_the_wild/5098.wav,0,bonafide,bonafide,bonafide,Malcolm X,2.6340625,16000
+itw__5167,itw,eval,in_the_wild/release_in_the_wild/5167.wav,1,itw_spoof,itw_spoof,unknown,Tucker Carlson,6.596,16000
+itw__5219,itw,eval,in_the_wild/release_in_the_wild/5219.wav,1,itw_spoof,itw_spoof,unknown,Arnold Schwarzenegger,4.948,16000
+itw__5268,itw,eval,in_the_wild/release_in_the_wild/5268.wav,0,bonafide,bonafide,bonafide,Billie Eilish,23.4590625,16000
+itw__5294,itw,eval,in_the_wild/release_in_the_wild/5294.wav,1,itw_spoof,itw_spoof,unknown,Mark Zuckerberg,1.9050625,16000
+itw__5309,itw,eval,in_the_wild/release_in_the_wild/5309.wav,0,bonafide,bonafide,bonafide,Mr. Rogers,3.772,16000
+itw__5386,itw,eval,in_the_wild/release_in_the_wild/5386.wav,0,bonafide,bonafide,bonafide,Barack Obama,2.264,16000
+itw__5390,itw,eval,in_the_wild/release_in_the_wild/5390.wav,1,itw_spoof,itw_spoof,unknown,George W. Bush,4.8770625,16000
+itw__5435,itw,eval,in_the_wild/release_in_the_wild/5435.wav,1,itw_spoof,itw_spoof,unknown,Adam Driver,1.2950625,16000
+itw__5438,itw,eval,in_the_wild/release_in_the_wild/5438.wav,0,bonafide,bonafide,bonafide,Louis C.K.,3.851,16000
+itw__5490,itw,eval,in_the_wild/release_in_the_wild/5490.wav,1,itw_spoof,itw_spoof,unknown,Billie Eilish,20.722,16000
+itw__5495,itw,eval,in_the_wild/release_in_the_wild/5495.wav,1,itw_spoof,itw_spoof,unknown,Alexandria Ocasio-Cortez,9.6280625,16000
+itw__5565,itw,eval,in_the_wild/release_in_the_wild/5565.wav,1,itw_spoof,itw_spoof,unknown,Nelson Mandela,3.463,16000
+itw__5589,itw,eval,in_the_wild/release_in_the_wild/5589.wav,0,bonafide,bonafide,bonafide,Lyndon Johnson,8.4160625,16000
+itw__5595,itw,eval,in_the_wild/release_in_the_wild/5595.wav,1,itw_spoof,itw_spoof,unknown,Malcolm X,3.505,16000
+itw__5615,itw,eval,in_the_wild/release_in_the_wild/5615.wav,1,itw_spoof,itw_spoof,unknown,Louis C.K.,8.5320625,16000
+itw__5751,itw,eval,in_the_wild/release_in_the_wild/5751.wav,1,itw_spoof,itw_spoof,unknown,Jeff Goldblum,10.289,16000
+itw__5784,itw,eval,in_the_wild/release_in_the_wild/5784.wav,0,bonafide,bonafide,bonafide,John Cleese,3.9470625,16000
+itw__5811,itw,eval,in_the_wild/release_in_the_wild/5811.wav,0,bonafide,bonafide,bonafide,Robert Kardashian,3.172,16000
+itw__5847,itw,eval,in_the_wild/release_in_the_wild/5847.wav,1,itw_spoof,itw_spoof,unknown,Adam Driver,8.814,16000
+itw__5893,itw,eval,in_the_wild/release_in_the_wild/5893.wav,0,bonafide,bonafide,bonafide,John Cleese,24.2990625,16000
+itw__5967,itw,eval,in_the_wild/release_in_the_wild/5967.wav,0,bonafide,bonafide,bonafide,Billie Eilish,17.8670625,16000
+itw__6018,itw,eval,in_the_wild/release_in_the_wild/6018.wav,0,bonafide,bonafide,bonafide,William F. Buckley,6.7370625,16000
+itw__6058,itw,eval,in_the_wild/release_in_the_wild/6058.wav,1,itw_spoof,itw_spoof,unknown,Ronald Reagan,3.3120625,16000
+itw__6087,itw,eval,in_the_wild/release_in_the_wild/6087.wav,0,bonafide,bonafide,bonafide,Bob Ross,4.127,16000
+itw__6106,itw,eval,in_the_wild/release_in_the_wild/6106.wav,0,bonafide,bonafide,bonafide,Nick Offerman,3.888,16000
+itw__6147,itw,eval,in_the_wild/release_in_the_wild/6147.wav,0,bonafide,bonafide,bonafide,Jerry Seinfeld,1.142,16000
+itw__6172,itw,eval,in_the_wild/release_in_the_wild/6172.wav,0,bonafide,bonafide,bonafide,Nick Offerman,1.9360625,16000
+itw__6252,itw,eval,in_the_wild/release_in_the_wild/6252.wav,0,bonafide,bonafide,bonafide,Norm MacDonald,1.5570625,16000
+itw__6317,itw,eval,in_the_wild/release_in_the_wild/6317.wav,0,bonafide,bonafide,bonafide,Ronald Reagan,2.145,16000
+itw__6501,itw,eval,in_the_wild/release_in_the_wild/6501.wav,1,itw_spoof,itw_spoof,unknown,Malcolm X,5.125,16000
+itw__6517,itw,eval,in_the_wild/release_in_the_wild/6517.wav,1,itw_spoof,itw_spoof,unknown,Ayn Rand,6.4640625,16000
+itw__6532,itw,eval,in_the_wild/release_in_the_wild/6532.wav,1,itw_spoof,itw_spoof,unknown,Arnold Schwarzenegger,1.48,16000
+itw__6564,itw,eval,in_the_wild/release_in_the_wild/6564.wav,0,bonafide,bonafide,bonafide,Milton Friedman,2.2390625,16000
+itw__6579,itw,eval,in_the_wild/release_in_the_wild/6579.wav,0,bonafide,bonafide,bonafide,Queen Elizabeth II,8.43,16000
+itw__6647,itw,eval,in_the_wild/release_in_the_wild/6647.wav,1,itw_spoof,itw_spoof,unknown,Richard Nixon,8.246,16000
+itw__6923,itw,eval,in_the_wild/release_in_the_wild/6923.wav,0,bonafide,bonafide,bonafide,Louis C.K.,5.855,16000
+itw__6929,itw,eval,in_the_wild/release_in_the_wild/6929.wav,1,itw_spoof,itw_spoof,unknown,Jimmy Carter,17.4390625,16000
+itw__6973,itw,eval,in_the_wild/release_in_the_wild/6973.wav,0,bonafide,bonafide,bonafide,Dwight Eisenhower,1.163,16000
+itw__6983,itw,eval,in_the_wild/release_in_the_wild/6983.wav,0,bonafide,bonafide,bonafide,Queen Elizabeth II,6.925,16000
+itw__7014,itw,eval,in_the_wild/release_in_the_wild/7014.wav,1,itw_spoof,itw_spoof,unknown,Bill Clinton,1.9550625,16000
+itw__7106,itw,eval,in_the_wild/release_in_the_wild/7106.wav,0,bonafide,bonafide,bonafide,Dave Chappelle,8.211,16000
+itw__7182,itw,eval,in_the_wild/release_in_the_wild/7182.wav,0,bonafide,bonafide,bonafide,John Cleese,1.5390625,16000
+itw__7225,itw,eval,in_the_wild/release_in_the_wild/7225.wav,1,itw_spoof,itw_spoof,unknown,Mr. Rogers,3.241,16000
+itw__7229,itw,eval,in_the_wild/release_in_the_wild/7229.wav,1,itw_spoof,itw_spoof,unknown,Christopher Hitchens,7.051,16000
+itw__7250,itw,eval,in_the_wild/release_in_the_wild/7250.wav,0,bonafide,bonafide,bonafide,Calvin Coolidge,2.8150625,16000
+itw__7305,itw,eval,in_the_wild/release_in_the_wild/7305.wav,0,bonafide,bonafide,bonafide,Mark Zuckerberg,3.3900625,16000
+itw__7378,itw,eval,in_the_wild/release_in_the_wild/7378.wav,0,bonafide,bonafide,bonafide,Mr. Rogers,2.8190625,16000
+itw__7475,itw,eval,in_the_wild/release_in_the_wild/7475.wav,0,bonafide,bonafide,bonafide,Jeff Goldblum,2.0120625,16000
+itw__7485,itw,eval,in_the_wild/release_in_the_wild/7485.wav,0,bonafide,bonafide,bonafide,Gilbert Gottfried,2.5340625,16000
+itw__7505,itw,eval,in_the_wild/release_in_the_wild/7505.wav,1,itw_spoof,itw_spoof,unknown,Bob Ross,6.664,16000
+itw__7567,itw,eval,in_the_wild/release_in_the_wild/7567.wav,1,itw_spoof,itw_spoof,unknown,Christopher Hitchens,2.2980625,16000
+itw__7720,itw,eval,in_the_wild/release_in_the_wild/7720.wav,1,itw_spoof,itw_spoof,unknown,Winston Churchill,2.705,16000
+itw__7728,itw,eval,in_the_wild/release_in_the_wild/7728.wav,0,bonafide,bonafide,bonafide,Barack Obama,9.442,16000
+itw__7736,itw,eval,in_the_wild/release_in_the_wild/7736.wav,1,itw_spoof,itw_spoof,unknown,Richard Nixon,1.611,16000
+itw__7749,itw,eval,in_the_wild/release_in_the_wild/7749.wav,0,bonafide,bonafide,bonafide,Alexandria Ocasio-Cortez,6.309,16000
+itw__7798,itw,eval,in_the_wild/release_in_the_wild/7798.wav,0,bonafide,bonafide,bonafide,Alec Guinness,2.5560625,16000
+itw__7801,itw,eval,in_the_wild/release_in_the_wild/7801.wav,1,itw_spoof,itw_spoof,unknown,Dave Chappelle,2.814,16000
+itw__7807,itw,eval,in_the_wild/release_in_the_wild/7807.wav,0,bonafide,bonafide,bonafide,Alec Guinness,2.022,16000
+itw__7818,itw,eval,in_the_wild/release_in_the_wild/7818.wav,1,itw_spoof,itw_spoof,unknown,George Carlin,23.583,16000
+itw__7941,itw,eval,in_the_wild/release_in_the_wild/7941.wav,1,itw_spoof,itw_spoof,unknown,FDR,2.767,16000
+itw__7983,itw,eval,in_the_wild/release_in_the_wild/7983.wav,1,itw_spoof,itw_spoof,unknown,Bill Clinton,2.5910625,16000
+itw__8016,itw,eval,in_the_wild/release_in_the_wild/8016.wav,1,itw_spoof,itw_spoof,unknown,Harry Truman,4.9700625,16000
+itw__8037,itw,eval,in_the_wild/release_in_the_wild/8037.wav,0,bonafide,bonafide,bonafide,Frank Sinatra,3.9980625,16000
+itw__8125,itw,eval,in_the_wild/release_in_the_wild/8125.wav,0,bonafide,bonafide,bonafide,Kamala Harris,3.305,16000
+itw__8158,itw,eval,in_the_wild/release_in_the_wild/8158.wav,1,itw_spoof,itw_spoof,unknown,Bill Burr,10.4850625,16000
+itw__8328,itw,eval,in_the_wild/release_in_the_wild/8328.wav,0,bonafide,bonafide,bonafide,Jeff Goldblum,14.4380625,16000
+itw__8421,itw,eval,in_the_wild/release_in_the_wild/8421.wav,0,bonafide,bonafide,bonafide,Martin Luther King,1.282,16000
+itw__8432,itw,eval,in_the_wild/release_in_the_wild/8432.wav,1,itw_spoof,itw_spoof,unknown,JFK,4.4980625,16000
+itw__8480,itw,eval,in_the_wild/release_in_the_wild/8480.wav,0,bonafide,bonafide,bonafide,Arnold Schwarzenegger,2.4910625,16000
+itw__8504,itw,eval,in_the_wild/release_in_the_wild/8504.wav,0,bonafide,bonafide,bonafide,Orson Welles,4.74,16000
+itw__8537,itw,eval,in_the_wild/release_in_the_wild/8537.wav,1,itw_spoof,itw_spoof,unknown,Nelson Mandela,1.7360625,16000
+itw__8618,itw,eval,in_the_wild/release_in_the_wild/8618.wav,0,bonafide,bonafide,bonafide,Mitch Hedberg,5.2630625,16000
+itw__8622,itw,eval,in_the_wild/release_in_the_wild/8622.wav,1,itw_spoof,itw_spoof,unknown,Ronald Reagan,3.8580625,16000
+itw__8674,itw,eval,in_the_wild/release_in_the_wild/8674.wav,0,bonafide,bonafide,bonafide,Bob Ross,9.2640625,16000
+itw__8681,itw,eval,in_the_wild/release_in_the_wild/8681.wav,0,bonafide,bonafide,bonafide,Mark Zuckerberg,1.4160625,16000
+itw__8699,itw,eval,in_the_wild/release_in_the_wild/8699.wav,1,itw_spoof,itw_spoof,unknown,Queen Elizabeth II,1.7270625,16000
+itw__8703,itw,eval,in_the_wild/release_in_the_wild/8703.wav,0,bonafide,bonafide,bonafide,Kanye West,0.9700625,16000
+itw__8748,itw,eval,in_the_wild/release_in_the_wild/8748.wav,0,bonafide,bonafide,bonafide,Bill Clinton,12.9720625,16000
+itw__8786,itw,eval,in_the_wild/release_in_the_wild/8786.wav,1,itw_spoof,itw_spoof,unknown,Nick Offerman,22.77,16000
+itw__8811,itw,eval,in_the_wild/release_in_the_wild/8811.wav,0,bonafide,bonafide,bonafide,JFK,1.916,16000
+itw__8909,itw,eval,in_the_wild/release_in_the_wild/8909.wav,0,bonafide,bonafide,bonafide,George Carlin,8.4960625,16000
+itw__8970,itw,eval,in_the_wild/release_in_the_wild/8970.wav,1,itw_spoof,itw_spoof,unknown,Lyndon Johnson,8.144,16000
+itw__8989,itw,eval,in_the_wild/release_in_the_wild/8989.wav,1,itw_spoof,itw_spoof,unknown,Dwight Eisenhower,2.3970625,16000
+itw__9002,itw,eval,in_the_wild/release_in_the_wild/9002.wav,0,bonafide,bonafide,bonafide,Robert Kardashian,4.2780625,16000
+itw__9077,itw,eval,in_the_wild/release_in_the_wild/9077.wav,1,itw_spoof,itw_spoof,unknown,Donald Trump,11.543,16000
+itw__9108,itw,eval,in_the_wild/release_in_the_wild/9108.wav,1,itw_spoof,itw_spoof,unknown,Ayn Rand,3.843,16000
+itw__9131,itw,eval,in_the_wild/release_in_the_wild/9131.wav,1,itw_spoof,itw_spoof,unknown,William F. Buckley,3.1370625,16000
+itw__9151,itw,eval,in_the_wild/release_in_the_wild/9151.wav,1,itw_spoof,itw_spoof,unknown,Barack Obama,4.6590625,16000
+itw__9154,itw,eval,in_the_wild/release_in_the_wild/9154.wav,1,itw_spoof,itw_spoof,unknown,Bob Ross,7.524,16000
+itw__9157,itw,eval,in_the_wild/release_in_the_wild/9157.wav,0,bonafide,bonafide,bonafide,Scarlett Johansson,1.469,16000
+itw__9213,itw,eval,in_the_wild/release_in_the_wild/9213.wav,1,itw_spoof,itw_spoof,unknown,Mark Zuckerberg,4.1500625,16000
+itw__9262,itw,eval,in_the_wild/release_in_the_wild/9262.wav,1,itw_spoof,itw_spoof,unknown,Louis Farrakhan,4.3250625,16000
+itw__9273,itw,eval,in_the_wild/release_in_the_wild/9273.wav,0,bonafide,bonafide,bonafide,Kamala Harris,6.0550625,16000
+itw__9306,itw,eval,in_the_wild/release_in_the_wild/9306.wav,1,itw_spoof,itw_spoof,unknown,Louis Farrakhan,10.395,16000
+itw__9313,itw,eval,in_the_wild/release_in_the_wild/9313.wav,0,bonafide,bonafide,bonafide,Alan Watts,6.523,16000
+itw__9335,itw,eval,in_the_wild/release_in_the_wild/9335.wav,0,bonafide,bonafide,bonafide,Adam Driver,5.8510625,16000
+itw__9341,itw,eval,in_the_wild/release_in_the_wild/9341.wav,0,bonafide,bonafide,bonafide,Kanye West,1.503,16000
+itw__9355,itw,eval,in_the_wild/release_in_the_wild/9355.wav,1,itw_spoof,itw_spoof,unknown,Alan Watts,3.9360625,16000
+itw__9363,itw,eval,in_the_wild/release_in_the_wild/9363.wav,1,itw_spoof,itw_spoof,unknown,Kamala Harris,1.1190625,16000
+itw__9482,itw,eval,in_the_wild/release_in_the_wild/9482.wav,0,bonafide,bonafide,bonafide,Winston Churchill,2.32,16000
+itw__9532,itw,eval,in_the_wild/release_in_the_wild/9532.wav,0,bonafide,bonafide,bonafide,William F. Buckley,5.647,16000
+itw__9586,itw,eval,in_the_wild/release_in_the_wild/9586.wav,1,itw_spoof,itw_spoof,unknown,Calvin Coolidge,4.9870625,16000
+itw__9654,itw,eval,in_the_wild/release_in_the_wild/9654.wav,0,bonafide,bonafide,bonafide,Martin Luther King,2.0750625,16000
+itw__9670,itw,eval,in_the_wild/release_in_the_wild/9670.wav,0,bonafide,bonafide,bonafide,The Notorious B.I.G.,2.683,16000
+itw__9708,itw,eval,in_the_wild/release_in_the_wild/9708.wav,0,bonafide,bonafide,bonafide,Louis Farrakhan,1.664,16000
+itw__9761,itw,eval,in_the_wild/release_in_the_wild/9761.wav,0,bonafide,bonafide,bonafide,George Carlin,7.921,16000
+itw__9770,itw,eval,in_the_wild/release_in_the_wild/9770.wav,1,itw_spoof,itw_spoof,unknown,Queen Elizabeth II,4.47,16000
+itw__9791,itw,eval,in_the_wild/release_in_the_wild/9791.wav,0,bonafide,bonafide,bonafide,Scarlett Johansson,6.371,16000
+itw__9848,itw,eval,in_the_wild/release_in_the_wild/9848.wav,1,itw_spoof,itw_spoof,unknown,Calvin Coolidge,9.7180625,16000
+itw__10017,itw,eval,in_the_wild/release_in_the_wild/10017.wav,1,itw_spoof,itw_spoof,unknown,2Pac,9.89,16000
+itw__10075,itw,eval,in_the_wild/release_in_the_wild/10075.wav,1,itw_spoof,itw_spoof,unknown,Winston Churchill,6.344,16000
+itw__10100,itw,eval,in_the_wild/release_in_the_wild/10100.wav,0,bonafide,bonafide,bonafide,Dwight Eisenhower,3.2180625,16000
+itw__10119,itw,eval,in_the_wild/release_in_the_wild/10119.wav,1,itw_spoof,itw_spoof,unknown,Nelson Mandela,5.6100625,16000
+itw__10165,itw,eval,in_the_wild/release_in_the_wild/10165.wav,0,bonafide,bonafide,bonafide,Louis Farrakhan,2.0160625,16000
+itw__10192,itw,eval,in_the_wild/release_in_the_wild/10192.wav,0,bonafide,bonafide,bonafide,Lyndon Johnson,1.8980625,16000
+itw__10197,itw,eval,in_the_wild/release_in_the_wild/10197.wav,0,bonafide,bonafide,bonafide,Bill Clinton,1.3080625,16000
+itw__10253,itw,eval,in_the_wild/release_in_the_wild/10253.wav,1,itw_spoof,itw_spoof,unknown,Ayn Rand,2.183,16000
+itw__10315,itw,eval,in_the_wild/release_in_the_wild/10315.wav,0,bonafide,bonafide,bonafide,Nick Offerman,1.8300625,16000
+itw__10382,itw,eval,in_the_wild/release_in_the_wild/10382.wav,1,itw_spoof,itw_spoof,unknown,Louis Farrakhan,1.147,16000
+itw__10389,itw,eval,in_the_wild/release_in_the_wild/10389.wav,0,bonafide,bonafide,bonafide,Ayn Rand,4.6590625,16000
+itw__10396,itw,eval,in_the_wild/release_in_the_wild/10396.wav,1,itw_spoof,itw_spoof,unknown,Jimmy Carter,20.8180625,16000
+itw__10491,itw,eval,in_the_wild/release_in_the_wild/10491.wav,0,bonafide,bonafide,bonafide,Gilbert Gottfried,5.982,16000
+itw__10505,itw,eval,in_the_wild/release_in_the_wild/10505.wav,0,bonafide,bonafide,bonafide,The Notorious B.I.G.,6.3,16000
+itw__10507,itw,eval,in_the_wild/release_in_the_wild/10507.wav,0,bonafide,bonafide,bonafide,Jeff Goldblum,10.5370625,16000
+itw__10530,itw,eval,in_the_wild/release_in_the_wild/10530.wav,0,bonafide,bonafide,bonafide,2Pac,2.4770625,16000
+itw__10587,itw,eval,in_the_wild/release_in_the_wild/10587.wav,1,itw_spoof,itw_spoof,unknown,Jimmy Carter,5.487,16000
+itw__10603,itw,eval,in_the_wild/release_in_the_wild/10603.wav,0,bonafide,bonafide,bonafide,Orson Welles,11.8720625,16000
+itw__10606,itw,eval,in_the_wild/release_in_the_wild/10606.wav,1,itw_spoof,itw_spoof,unknown,Nelson Mandela,1.453,16000
+itw__10614,itw,eval,in_the_wild/release_in_the_wild/10614.wav,1,itw_spoof,itw_spoof,unknown,JFK,2.923,16000
+itw__10745,itw,eval,in_the_wild/release_in_the_wild/10745.wav,0,bonafide,bonafide,bonafide,Winston Churchill,1.1770625,16000
+itw__10782,itw,eval,in_the_wild/release_in_the_wild/10782.wav,0,bonafide,bonafide,bonafide,Christopher Hitchens,2.2660625,16000
+itw__10786,itw,eval,in_the_wild/release_in_the_wild/10786.wav,1,itw_spoof,itw_spoof,unknown,Adam Driver,3.5890625,16000
+itw__10815,itw,eval,in_the_wild/release_in_the_wild/10815.wav,0,bonafide,bonafide,bonafide,Jerry Seinfeld,5.67,16000
+itw__10853,itw,eval,in_the_wild/release_in_the_wild/10853.wav,1,itw_spoof,itw_spoof,unknown,Donald Trump,2.644,16000
+itw__10923,itw,eval,in_the_wild/release_in_the_wild/10923.wav,0,bonafide,bonafide,bonafide,Queen Elizabeth II,12.6140625,16000
+itw__10952,itw,eval,in_the_wild/release_in_the_wild/10952.wav,0,bonafide,bonafide,bonafide,2Pac,11.786,16000
+itw__11099,itw,eval,in_the_wild/release_in_the_wild/11099.wav,0,bonafide,bonafide,bonafide,Queen Elizabeth II,19.149,16000
+itw__11276,itw,eval,in_the_wild/release_in_the_wild/11276.wav,1,itw_spoof,itw_spoof,unknown,Robert Kardashian,0.933,16000
+itw__11334,itw,eval,in_the_wild/release_in_the_wild/11334.wav,0,bonafide,bonafide,bonafide,Tucker Carlson,6.3790625,16000
+itw__11402,itw,eval,in_the_wild/release_in_the_wild/11402.wav,0,bonafide,bonafide,bonafide,Boris Johnson,1.081,16000
+itw__11425,itw,eval,in_the_wild/release_in_the_wild/11425.wav,0,bonafide,bonafide,bonafide,FDR,2.9680625,16000
+itw__11473,itw,eval,in_the_wild/release_in_the_wild/11473.wav,0,bonafide,bonafide,bonafide,Adam Driver,7.944,16000
+itw__11483,itw,eval,in_the_wild/release_in_the_wild/11483.wav,0,bonafide,bonafide,bonafide,Alan Watts,2.328,16000
+itw__11531,itw,eval,in_the_wild/release_in_the_wild/11531.wav,0,bonafide,bonafide,bonafide,Bill Clinton,1.6910625,16000
+itw__11578,itw,eval,in_the_wild/release_in_the_wild/11578.wav,1,itw_spoof,itw_spoof,unknown,Nelson Mandela,2.362,16000
+itw__11586,itw,eval,in_the_wild/release_in_the_wild/11586.wav,1,itw_spoof,itw_spoof,unknown,Robert Kardashian,1.1160625,16000
+itw__11686,itw,eval,in_the_wild/release_in_the_wild/11686.wav,1,itw_spoof,itw_spoof,unknown,Lyndon Johnson,7.64,16000
+itw__11721,itw,eval,in_the_wild/release_in_the_wild/11721.wav,1,itw_spoof,itw_spoof,unknown,Mitch Hedberg,6.4360625,16000
+itw__12009,itw,eval,in_the_wild/release_in_the_wild/12009.wav,1,itw_spoof,itw_spoof,unknown,Jimmy Carter,5.4760625,16000
+itw__12091,itw,eval,in_the_wild/release_in_the_wild/12091.wav,1,itw_spoof,itw_spoof,unknown,John Cleese,21.171,16000
+itw__12142,itw,eval,in_the_wild/release_in_the_wild/12142.wav,1,itw_spoof,itw_spoof,unknown,Billie Eilish,8.308,16000
+itw__12155,itw,eval,in_the_wild/release_in_the_wild/12155.wav,0,bonafide,bonafide,bonafide,Alexandria Ocasio-Cortez,3.7380625,16000
+itw__12191,itw,eval,in_the_wild/release_in_the_wild/12191.wav,0,bonafide,bonafide,bonafide,George W. Bush,4.9140625,16000
+itw__12195,itw,eval,in_the_wild/release_in_the_wild/12195.wav,0,bonafide,bonafide,bonafide,Ayn Rand,2.9740625,16000
+itw__12204,itw,eval,in_the_wild/release_in_the_wild/12204.wav,1,itw_spoof,itw_spoof,unknown,Adam Driver,8.521,16000
+itw__12239,itw,eval,in_the_wild/release_in_the_wild/12239.wav,1,itw_spoof,itw_spoof,unknown,Gilbert Gottfried,5.564,16000
+itw__12241,itw,eval,in_the_wild/release_in_the_wild/12241.wav,0,bonafide,bonafide,bonafide,Mr. Rogers,2.91,16000
+itw__12303,itw,eval,in_the_wild/release_in_the_wild/12303.wav,1,itw_spoof,itw_spoof,unknown,Alec Guinness,2.304,16000
+itw__12369,itw,eval,in_the_wild/release_in_the_wild/12369.wav,0,bonafide,bonafide,bonafide,Adam Driver,4.067,16000
+itw__12418,itw,eval,in_the_wild/release_in_the_wild/12418.wav,1,itw_spoof,itw_spoof,unknown,Scarlett Johansson,11.9180625,16000
+itw__12420,itw,eval,in_the_wild/release_in_the_wild/12420.wav,1,itw_spoof,itw_spoof,unknown,Mark Zuckerberg,1.741,16000
+itw__12429,itw,eval,in_the_wild/release_in_the_wild/12429.wav,0,bonafide,bonafide,bonafide,Christopher Hitchens,11.224,16000
+itw__12439,itw,eval,in_the_wild/release_in_the_wild/12439.wav,1,itw_spoof,itw_spoof,unknown,Ayn Rand,7.462,16000
+itw__12440,itw,eval,in_the_wild/release_in_the_wild/12440.wav,1,itw_spoof,itw_spoof,unknown,2Pac,10.423,16000
+itw__12457,itw,eval,in_the_wild/release_in_the_wild/12457.wav,0,bonafide,bonafide,bonafide,Queen Elizabeth II,2.3700625,16000
+itw__12573,itw,eval,in_the_wild/release_in_the_wild/12573.wav,1,itw_spoof,itw_spoof,unknown,Bernie Sanders,19.7710625,16000
+itw__12590,itw,eval,in_the_wild/release_in_the_wild/12590.wav,1,itw_spoof,itw_spoof,unknown,Jeff Goldblum,1.0070625,16000
+itw__12594,itw,eval,in_the_wild/release_in_the_wild/12594.wav,1,itw_spoof,itw_spoof,unknown,Barack Obama,2.1690625,16000
+itw__12646,itw,eval,in_the_wild/release_in_the_wild/12646.wav,1,itw_spoof,itw_spoof,unknown,FDR,10.3380625,16000
+itw__12652,itw,eval,in_the_wild/release_in_the_wild/12652.wav,1,itw_spoof,itw_spoof,unknown,Barack Obama,1.845,16000
+itw__12759,itw,eval,in_the_wild/release_in_the_wild/12759.wav,1,itw_spoof,itw_spoof,unknown,Bernie Sanders,5.17,16000
+itw__12918,itw,eval,in_the_wild/release_in_the_wild/12918.wav,1,itw_spoof,itw_spoof,unknown,Mitch Hedberg,4.77,16000
+itw__13021,itw,eval,in_the_wild/release_in_the_wild/13021.wav,1,itw_spoof,itw_spoof,unknown,Jerry Seinfeld,3.7980625,16000
+itw__13053,itw,eval,in_the_wild/release_in_the_wild/13053.wav,1,itw_spoof,itw_spoof,unknown,Bill Burr,5.4940625,16000
+itw__13078,itw,eval,in_the_wild/release_in_the_wild/13078.wav,1,itw_spoof,itw_spoof,unknown,George W. Bush,1.09,16000
+itw__13156,itw,eval,in_the_wild/release_in_the_wild/13156.wav,1,itw_spoof,itw_spoof,unknown,George Carlin,3.991,16000
+itw__13203,itw,eval,in_the_wild/release_in_the_wild/13203.wav,0,bonafide,bonafide,bonafide,Lyndon Johnson,8.8390625,16000
+itw__13360,itw,eval,in_the_wild/release_in_the_wild/13360.wav,0,bonafide,bonafide,bonafide,Norm MacDonald,5.8560625,16000
+itw__13364,itw,eval,in_the_wild/release_in_the_wild/13364.wav,0,bonafide,bonafide,bonafide,Adam Driver,5.905,16000
+itw__13464,itw,eval,in_the_wild/release_in_the_wild/13464.wav,1,itw_spoof,itw_spoof,unknown,Boris Johnson,7.9390625,16000
+itw__13491,itw,eval,in_the_wild/release_in_the_wild/13491.wav,0,bonafide,bonafide,bonafide,The Notorious B.I.G.,1.7180625,16000
+itw__13539,itw,eval,in_the_wild/release_in_the_wild/13539.wav,0,bonafide,bonafide,bonafide,Tucker Carlson,5.302,16000
+itw__13601,itw,eval,in_the_wild/release_in_the_wild/13601.wav,1,itw_spoof,itw_spoof,unknown,Harry Truman,3.817,16000
+itw__13621,itw,eval,in_the_wild/release_in_the_wild/13621.wav,0,bonafide,bonafide,bonafide,George W. Bush,2.1550625,16000
+itw__13622,itw,eval,in_the_wild/release_in_the_wild/13622.wav,1,itw_spoof,itw_spoof,unknown,George Carlin,3.274,16000
+itw__13633,itw,eval,in_the_wild/release_in_the_wild/13633.wav,1,itw_spoof,itw_spoof,unknown,Jerry Seinfeld,21.4940625,16000
+itw__13637,itw,eval,in_the_wild/release_in_the_wild/13637.wav,0,bonafide,bonafide,bonafide,Lyndon Johnson,3.725,16000
+itw__13709,itw,eval,in_the_wild/release_in_the_wild/13709.wav,0,bonafide,bonafide,bonafide,Bill Clinton,2.5780625,16000
+itw__13760,itw,eval,in_the_wild/release_in_the_wild/13760.wav,0,bonafide,bonafide,bonafide,George W. Bush,2.253,16000
+itw__13841,itw,eval,in_the_wild/release_in_the_wild/13841.wav,1,itw_spoof,itw_spoof,unknown,Mitch Hedberg,7.1540625,16000
+itw__13938,itw,eval,in_the_wild/release_in_the_wild/13938.wav,1,itw_spoof,itw_spoof,unknown,Richard Nixon,3.643,16000
+itw__14028,itw,eval,in_the_wild/release_in_the_wild/14028.wav,1,itw_spoof,itw_spoof,unknown,Boris Johnson,3.241,16000
+itw__14035,itw,eval,in_the_wild/release_in_the_wild/14035.wav,1,itw_spoof,itw_spoof,unknown,Bill Clinton,4.4770625,16000
+itw__14085,itw,eval,in_the_wild/release_in_the_wild/14085.wav,0,bonafide,bonafide,bonafide,Ayn Rand,2.0590625,16000
+itw__14168,itw,eval,in_the_wild/release_in_the_wild/14168.wav,0,bonafide,bonafide,bonafide,Nelson Mandela,12.7550625,16000
+itw__14185,itw,eval,in_the_wild/release_in_the_wild/14185.wav,1,itw_spoof,itw_spoof,unknown,Alexandria Ocasio-Cortez,8.9410625,16000
+itw__14411,itw,eval,in_the_wild/release_in_the_wild/14411.wav,1,itw_spoof,itw_spoof,unknown,Jeff Goldblum,1.194,16000
+itw__14476,itw,eval,in_the_wild/release_in_the_wild/14476.wav,1,itw_spoof,itw_spoof,unknown,The Notorious B.I.G.,8.62,16000
+itw__14525,itw,eval,in_the_wild/release_in_the_wild/14525.wav,1,itw_spoof,itw_spoof,unknown,Malcolm X,3.588,16000
+itw__14532,itw,eval,in_the_wild/release_in_the_wild/14532.wav,1,itw_spoof,itw_spoof,unknown,Bernie Sanders,2.9280625,16000
+itw__14612,itw,eval,in_the_wild/release_in_the_wild/14612.wav,1,itw_spoof,itw_spoof,unknown,Donald Trump,1.6750625,16000
+itw__14633,itw,eval,in_the_wild/release_in_the_wild/14633.wav,1,itw_spoof,itw_spoof,unknown,Orson Welles,4.552,16000
+itw__14661,itw,eval,in_the_wild/release_in_the_wild/14661.wav,0,bonafide,bonafide,bonafide,Winston Churchill,1.781,16000
+itw__14692,itw,eval,in_the_wild/release_in_the_wild/14692.wav,1,itw_spoof,itw_spoof,unknown,John Cleese,18.9570625,16000
+itw__14701,itw,eval,in_the_wild/release_in_the_wild/14701.wav,0,bonafide,bonafide,bonafide,Nelson Mandela,3.3960625,16000
+itw__14776,itw,eval,in_the_wild/release_in_the_wild/14776.wav,0,bonafide,bonafide,bonafide,Dwight Eisenhower,2.264,16000
+itw__14801,itw,eval,in_the_wild/release_in_the_wild/14801.wav,0,bonafide,bonafide,bonafide,George Carlin,3.427,16000
+itw__14824,itw,eval,in_the_wild/release_in_the_wild/14824.wav,0,bonafide,bonafide,bonafide,Bob Ross,12.48,16000
+itw__14835,itw,eval,in_the_wild/release_in_the_wild/14835.wav,1,itw_spoof,itw_spoof,unknown,Milton Friedman,11.497,16000
+itw__14846,itw,eval,in_the_wild/release_in_the_wild/14846.wav,0,bonafide,bonafide,bonafide,Jeff Goldblum,6.9550625,16000
+itw__14959,itw,eval,in_the_wild/release_in_the_wild/14959.wav,0,bonafide,bonafide,bonafide,2Pac,3.9570625,16000
+itw__14981,itw,eval,in_the_wild/release_in_the_wild/14981.wav,1,itw_spoof,itw_spoof,unknown,Ronald Reagan,2.6870625,16000
+itw__15013,itw,eval,in_the_wild/release_in_the_wild/15013.wav,1,itw_spoof,itw_spoof,unknown,Jerry Seinfeld,4.048,16000
+itw__15105,itw,eval,in_the_wild/release_in_the_wild/15105.wav,1,itw_spoof,itw_spoof,unknown,Louis C.K.,2.389,16000
+itw__15123,itw,eval,in_the_wild/release_in_the_wild/15123.wav,0,bonafide,bonafide,bonafide,Barack Obama,4.823,16000
+itw__15130,itw,eval,in_the_wild/release_in_the_wild/15130.wav,0,bonafide,bonafide,bonafide,Jeff Goldblum,3.761,16000
+itw__15249,itw,eval,in_the_wild/release_in_the_wild/15249.wav,1,itw_spoof,itw_spoof,unknown,Bob Ross,19.941,16000
+itw__15298,itw,eval,in_the_wild/release_in_the_wild/15298.wav,1,itw_spoof,itw_spoof,unknown,Nelson Mandela,5.3290625,16000
+itw__15363,itw,eval,in_the_wild/release_in_the_wild/15363.wav,0,bonafide,bonafide,bonafide,Billie Eilish,12.5040625,16000
+itw__15371,itw,eval,in_the_wild/release_in_the_wild/15371.wav,0,bonafide,bonafide,bonafide,Mark Zuckerberg,10.544,16000
+itw__15452,itw,eval,in_the_wild/release_in_the_wild/15452.wav,0,bonafide,bonafide,bonafide,Alexandria Ocasio-Cortez,3.8370625,16000
+itw__15475,itw,eval,in_the_wild/release_in_the_wild/15475.wav,0,bonafide,bonafide,bonafide,Donald Trump,3.1260625,16000
+itw__15498,itw,eval,in_the_wild/release_in_the_wild/15498.wav,0,bonafide,bonafide,bonafide,Nelson Mandela,1.6790625,16000
+itw__15506,itw,eval,in_the_wild/release_in_the_wild/15506.wav,1,itw_spoof,itw_spoof,unknown,Milton Friedman,14.551,16000
+itw__15522,itw,eval,in_the_wild/release_in_the_wild/15522.wav,0,bonafide,bonafide,bonafide,John Cleese,8.2540625,16000
+itw__15558,itw,eval,in_the_wild/release_in_the_wild/15558.wav,0,bonafide,bonafide,bonafide,Milton Friedman,1.956,16000
+itw__15614,itw,eval,in_the_wild/release_in_the_wild/15614.wav,0,bonafide,bonafide,bonafide,JFK,3.282,16000
+itw__15696,itw,eval,in_the_wild/release_in_the_wild/15696.wav,0,bonafide,bonafide,bonafide,Frank Sinatra,2.0590625,16000
+itw__15755,itw,eval,in_the_wild/release_in_the_wild/15755.wav,1,itw_spoof,itw_spoof,unknown,Louis C.K.,3.0660625,16000
+itw__15768,itw,eval,in_the_wild/release_in_the_wild/15768.wav,0,bonafide,bonafide,bonafide,Ayn Rand,2.948,16000
+itw__15785,itw,eval,in_the_wild/release_in_the_wild/15785.wav,1,itw_spoof,itw_spoof,unknown,Gilbert Gottfried,6.149,16000
+itw__15821,itw,eval,in_the_wild/release_in_the_wild/15821.wav,1,itw_spoof,itw_spoof,unknown,Nick Offerman,1.706,16000
+itw__15829,itw,eval,in_the_wild/release_in_the_wild/15829.wav,0,bonafide,bonafide,bonafide,William F. Buckley,8.873,16000
+itw__15860,itw,eval,in_the_wild/release_in_the_wild/15860.wav,1,itw_spoof,itw_spoof,unknown,Frank Sinatra,13.888,16000
+itw__15866,itw,eval,in_the_wild/release_in_the_wild/15866.wav,1,itw_spoof,itw_spoof,unknown,Martin Luther King,2.634,16000
+itw__15907,itw,eval,in_the_wild/release_in_the_wild/15907.wav,1,itw_spoof,itw_spoof,unknown,Alan Watts,1.3520625,16000
+itw__15968,itw,eval,in_the_wild/release_in_the_wild/15968.wav,0,bonafide,bonafide,bonafide,Norm MacDonald,1.5920625,16000
+itw__15996,itw,eval,in_the_wild/release_in_the_wild/15996.wav,0,bonafide,bonafide,bonafide,Milton Friedman,7.1050625,16000
+itw__16041,itw,eval,in_the_wild/release_in_the_wild/16041.wav,0,bonafide,bonafide,bonafide,Norm MacDonald,5.625,16000
+itw__16148,itw,eval,in_the_wild/release_in_the_wild/16148.wav,1,itw_spoof,itw_spoof,unknown,Winston Churchill,3.5940625,16000
+itw__16168,itw,eval,in_the_wild/release_in_the_wild/16168.wav,1,itw_spoof,itw_spoof,unknown,Nick Offerman,14.8340625,16000
+itw__16187,itw,eval,in_the_wild/release_in_the_wild/16187.wav,1,itw_spoof,itw_spoof,unknown,Dave Chappelle,2.1060625,16000
+itw__16191,itw,eval,in_the_wild/release_in_the_wild/16191.wav,1,itw_spoof,itw_spoof,unknown,Robert Kardashian,1.0390625,16000
+itw__16246,itw,eval,in_the_wild/release_in_the_wild/16246.wav,0,bonafide,bonafide,bonafide,Jerry Seinfeld,12.6010625,16000
+itw__16277,itw,eval,in_the_wild/release_in_the_wild/16277.wav,0,bonafide,bonafide,bonafide,FDR,1.441,16000
+itw__16285,itw,eval,in_the_wild/release_in_the_wild/16285.wav,0,bonafide,bonafide,bonafide,Harry Truman,4.709,16000
+itw__16428,itw,eval,in_the_wild/release_in_the_wild/16428.wav,0,bonafide,bonafide,bonafide,Jimmy Carter,1.524,16000
+itw__16455,itw,eval,in_the_wild/release_in_the_wild/16455.wav,0,bonafide,bonafide,bonafide,Martin Luther King,3.966,16000
+itw__16559,itw,eval,in_the_wild/release_in_the_wild/16559.wav,0,bonafide,bonafide,bonafide,JFK,2.322,16000
+itw__16573,itw,eval,in_the_wild/release_in_the_wild/16573.wav,0,bonafide,bonafide,bonafide,Alexandria Ocasio-Cortez,2.011,16000
+itw__16665,itw,eval,in_the_wild/release_in_the_wild/16665.wav,1,itw_spoof,itw_spoof,unknown,Norm MacDonald,1.888,16000
+itw__16672,itw,eval,in_the_wild/release_in_the_wild/16672.wav,0,bonafide,bonafide,bonafide,Frank Sinatra,4.3510625,16000
+itw__16786,itw,eval,in_the_wild/release_in_the_wild/16786.wav,1,itw_spoof,itw_spoof,unknown,Alec Guinness,1.3330625,16000
+itw__16991,itw,eval,in_the_wild/release_in_the_wild/16991.wav,1,itw_spoof,itw_spoof,unknown,Mr. Rogers,2.949,16000
+itw__17232,itw,eval,in_the_wild/release_in_the_wild/17232.wav,1,itw_spoof,itw_spoof,unknown,Lyndon Johnson,2.029,16000
+itw__17244,itw,eval,in_the_wild/release_in_the_wild/17244.wav,0,bonafide,bonafide,bonafide,Robert Kardashian,2.678,16000
+itw__17256,itw,eval,in_the_wild/release_in_the_wild/17256.wav,1,itw_spoof,itw_spoof,unknown,Martin Luther King,11.8370625,16000
+itw__17257,itw,eval,in_the_wild/release_in_the_wild/17257.wav,1,itw_spoof,itw_spoof,unknown,Dwight Eisenhower,4.94,16000
+itw__17467,itw,eval,in_the_wild/release_in_the_wild/17467.wav,1,itw_spoof,itw_spoof,unknown,FDR,3.47,16000
+itw__17486,itw,eval,in_the_wild/release_in_the_wild/17486.wav,0,bonafide,bonafide,bonafide,George Carlin,2.745,16000
+itw__17500,itw,eval,in_the_wild/release_in_the_wild/17500.wav,1,itw_spoof,itw_spoof,unknown,Bernie Sanders,10.796,16000
+itw__17613,itw,eval,in_the_wild/release_in_the_wild/17613.wav,1,itw_spoof,itw_spoof,unknown,Gilbert Gottfried,2.702,16000
+itw__17777,itw,eval,in_the_wild/release_in_the_wild/17777.wav,1,itw_spoof,itw_spoof,unknown,Alexandria Ocasio-Cortez,7.604,16000
+itw__17795,itw,eval,in_the_wild/release_in_the_wild/17795.wav,0,bonafide,bonafide,bonafide,Christopher Hitchens,4.014,16000
+itw__17838,itw,eval,in_the_wild/release_in_the_wild/17838.wav,0,bonafide,bonafide,bonafide,Billie Eilish,1.587,16000
+itw__17861,itw,eval,in_the_wild/release_in_the_wild/17861.wav,0,bonafide,bonafide,bonafide,Kanye West,4.826,16000
+itw__17932,itw,eval,in_the_wild/release_in_the_wild/17932.wav,0,bonafide,bonafide,bonafide,Arnold Schwarzenegger,4.965,16000
+itw__17979,itw,eval,in_the_wild/release_in_the_wild/17979.wav,1,itw_spoof,itw_spoof,unknown,Arnold Schwarzenegger,2.3530625,16000
+itw__17985,itw,eval,in_the_wild/release_in_the_wild/17985.wav,0,bonafide,bonafide,bonafide,Gilbert Gottfried,4.0310625,16000
+itw__18006,itw,eval,in_the_wild/release_in_the_wild/18006.wav,0,bonafide,bonafide,bonafide,2Pac,6.7140625,16000
+itw__18087,itw,eval,in_the_wild/release_in_the_wild/18087.wav,0,bonafide,bonafide,bonafide,Jimmy Carter,2.8580625,16000
+itw__18159,itw,eval,in_the_wild/release_in_the_wild/18159.wav,1,itw_spoof,itw_spoof,unknown,Jimmy Carter,2.06,16000
+itw__18175,itw,eval,in_the_wild/release_in_the_wild/18175.wav,0,bonafide,bonafide,bonafide,Louis Farrakhan,3.0580625,16000
+itw__18293,itw,eval,in_the_wild/release_in_the_wild/18293.wav,0,bonafide,bonafide,bonafide,Dwight Eisenhower,1.788,16000
+itw__18302,itw,eval,in_the_wild/release_in_the_wild/18302.wav,1,itw_spoof,itw_spoof,unknown,Martin Luther King,3.784,16000
+itw__18324,itw,eval,in_the_wild/release_in_the_wild/18324.wav,0,bonafide,bonafide,bonafide,JFK,1.983,16000
+itw__18351,itw,eval,in_the_wild/release_in_the_wild/18351.wav,1,itw_spoof,itw_spoof,unknown,Dave Chappelle,16.5070625,16000
+itw__18409,itw,eval,in_the_wild/release_in_the_wild/18409.wav,1,itw_spoof,itw_spoof,unknown,Bill Burr,7.2110625,16000
+itw__18457,itw,eval,in_the_wild/release_in_the_wild/18457.wav,0,bonafide,bonafide,bonafide,Scarlett Johansson,2.07,16000
+itw__18463,itw,eval,in_the_wild/release_in_the_wild/18463.wav,0,bonafide,bonafide,bonafide,Ronald Reagan,1.6760625,16000
+itw__18595,itw,eval,in_the_wild/release_in_the_wild/18595.wav,1,itw_spoof,itw_spoof,unknown,William F. Buckley,2.6590625,16000
+itw__18729,itw,eval,in_the_wild/release_in_the_wild/18729.wav,0,bonafide,bonafide,bonafide,Dwight Eisenhower,2.7580625,16000
+itw__18737,itw,eval,in_the_wild/release_in_the_wild/18737.wav,0,bonafide,bonafide,bonafide,Alec Guinness,4.0570625,16000
+itw__18926,itw,eval,in_the_wild/release_in_the_wild/18926.wav,0,bonafide,bonafide,bonafide,Alan Watts,0.801,16000
+itw__18969,itw,eval,in_the_wild/release_in_the_wild/18969.wav,0,bonafide,bonafide,bonafide,Barack Obama,5.226,16000
+itw__18988,itw,eval,in_the_wild/release_in_the_wild/18988.wav,1,itw_spoof,itw_spoof,unknown,Christopher Hitchens,9.081,16000
+itw__19061,itw,eval,in_the_wild/release_in_the_wild/19061.wav,1,itw_spoof,itw_spoof,unknown,Queen Elizabeth II,1.349,16000
+itw__19098,itw,eval,in_the_wild/release_in_the_wild/19098.wav,0,bonafide,bonafide,bonafide,Kamala Harris,5.0160625,16000
+itw__19126,itw,eval,in_the_wild/release_in_the_wild/19126.wav,0,bonafide,bonafide,bonafide,Jerry Seinfeld,12.362,16000
+itw__19157,itw,eval,in_the_wild/release_in_the_wild/19157.wav,1,itw_spoof,itw_spoof,unknown,Martin Luther King,4.007,16000
+itw__19172,itw,eval,in_the_wild/release_in_the_wild/19172.wav,1,itw_spoof,itw_spoof,unknown,Ayn Rand,1.91,16000
+itw__19190,itw,eval,in_the_wild/release_in_the_wild/19190.wav,1,itw_spoof,itw_spoof,unknown,George Carlin,3.527,16000
+itw__19259,itw,eval,in_the_wild/release_in_the_wild/19259.wav,0,bonafide,bonafide,bonafide,Malcolm X,2.9500625,16000
+itw__19265,itw,eval,in_the_wild/release_in_the_wild/19265.wav,0,bonafide,bonafide,bonafide,The Notorious B.I.G.,2.7180625,16000
+itw__19307,itw,eval,in_the_wild/release_in_the_wild/19307.wav,1,itw_spoof,itw_spoof,unknown,FDR,3.8720625,16000
+itw__19426,itw,eval,in_the_wild/release_in_the_wild/19426.wav,1,itw_spoof,itw_spoof,unknown,Barack Obama,3.7970625,16000
+itw__19510,itw,eval,in_the_wild/release_in_the_wild/19510.wav,1,itw_spoof,itw_spoof,unknown,The Notorious B.I.G.,1.8080625,16000
+itw__19524,itw,eval,in_the_wild/release_in_the_wild/19524.wav,0,bonafide,bonafide,bonafide,Richard Nixon,0.806,16000
+itw__19602,itw,eval,in_the_wild/release_in_the_wild/19602.wav,1,itw_spoof,itw_spoof,unknown,JFK,1.744,16000
+itw__19620,itw,eval,in_the_wild/release_in_the_wild/19620.wav,1,itw_spoof,itw_spoof,unknown,Orson Welles,4.4670625,16000
+itw__19630,itw,eval,in_the_wild/release_in_the_wild/19630.wav,1,itw_spoof,itw_spoof,unknown,Donald Trump,7.435,16000
+itw__19642,itw,eval,in_the_wild/release_in_the_wild/19642.wav,0,bonafide,bonafide,bonafide,Orson Welles,3.821,16000
+itw__19736,itw,eval,in_the_wild/release_in_the_wild/19736.wav,0,bonafide,bonafide,bonafide,Milton Friedman,3.2590625,16000
+itw__19784,itw,eval,in_the_wild/release_in_the_wild/19784.wav,1,itw_spoof,itw_spoof,unknown,Scarlett Johansson,10.2140625,16000
+itw__19785,itw,eval,in_the_wild/release_in_the_wild/19785.wav,0,bonafide,bonafide,bonafide,Harry Truman,4.19,16000
+itw__19786,itw,eval,in_the_wild/release_in_the_wild/19786.wav,0,bonafide,bonafide,bonafide,Christopher Hitchens,2.7780625,16000
+itw__19789,itw,eval,in_the_wild/release_in_the_wild/19789.wav,0,bonafide,bonafide,bonafide,Donald Trump,4.2720625,16000
+itw__19803,itw,eval,in_the_wild/release_in_the_wild/19803.wav,0,bonafide,bonafide,bonafide,Bob Ross,6.1370625,16000
+itw__19949,itw,eval,in_the_wild/release_in_the_wild/19949.wav,0,bonafide,bonafide,bonafide,Bernie Sanders,1.9160625,16000
+itw__19960,itw,eval,in_the_wild/release_in_the_wild/19960.wav,1,itw_spoof,itw_spoof,unknown,Robert Kardashian,1.472,16000
+itw__20002,itw,eval,in_the_wild/release_in_the_wild/20002.wav,1,itw_spoof,itw_spoof,unknown,Norm MacDonald,1.364,16000
+itw__20158,itw,eval,in_the_wild/release_in_the_wild/20158.wav,0,bonafide,bonafide,bonafide,Louis C.K.,3.191,16000
+itw__20170,itw,eval,in_the_wild/release_in_the_wild/20170.wav,1,itw_spoof,itw_spoof,unknown,Tucker Carlson,11.2910625,16000
+itw__20239,itw,eval,in_the_wild/release_in_the_wild/20239.wav,0,bonafide,bonafide,bonafide,Boris Johnson,9.753,16000
+itw__20261,itw,eval,in_the_wild/release_in_the_wild/20261.wav,1,itw_spoof,itw_spoof,unknown,George W. Bush,2.3160625,16000
+itw__20443,itw,eval,in_the_wild/release_in_the_wild/20443.wav,0,bonafide,bonafide,bonafide,Donald Trump,6.6320625,16000
+itw__20501,itw,eval,in_the_wild/release_in_the_wild/20501.wav,1,itw_spoof,itw_spoof,unknown,Orson Welles,5.954,16000
+itw__20584,itw,eval,in_the_wild/release_in_the_wild/20584.wav,0,bonafide,bonafide,bonafide,Kanye West,2.3730625,16000
+itw__20608,itw,eval,in_the_wild/release_in_the_wild/20608.wav,0,bonafide,bonafide,bonafide,Gilbert Gottfried,1.842,16000
+itw__20703,itw,eval,in_the_wild/release_in_the_wild/20703.wav,0,bonafide,bonafide,bonafide,Mitch Hedberg,13.715,16000
+itw__20774,itw,eval,in_the_wild/release_in_the_wild/20774.wav,0,bonafide,bonafide,bonafide,Scarlett Johansson,9.1460625,16000
+itw__20806,itw,eval,in_the_wild/release_in_the_wild/20806.wav,0,bonafide,bonafide,bonafide,Nick Offerman,3.823,16000
+itw__20818,itw,eval,in_the_wild/release_in_the_wild/20818.wav,1,itw_spoof,itw_spoof,unknown,Donald Trump,3.774,16000
+itw__20821,itw,eval,in_the_wild/release_in_the_wild/20821.wav,0,bonafide,bonafide,bonafide,George W. Bush,1.8120625,16000
+itw__20857,itw,eval,in_the_wild/release_in_the_wild/20857.wav,0,bonafide,bonafide,bonafide,Malcolm X,7.2050625,16000
+itw__20859,itw,eval,in_the_wild/release_in_the_wild/20859.wav,0,bonafide,bonafide,bonafide,Frank Sinatra,3.793,16000
+itw__20861,itw,eval,in_the_wild/release_in_the_wild/20861.wav,0,bonafide,bonafide,bonafide,Winston Churchill,2.6190625,16000
+itw__20903,itw,eval,in_the_wild/release_in_the_wild/20903.wav,0,bonafide,bonafide,bonafide,Milton Friedman,2.472,16000
+itw__20961,itw,eval,in_the_wild/release_in_the_wild/20961.wav,1,itw_spoof,itw_spoof,unknown,Dwight Eisenhower,3.258,16000
+itw__21050,itw,eval,in_the_wild/release_in_the_wild/21050.wav,1,itw_spoof,itw_spoof,unknown,Mitch Hedberg,1.98,16000
+itw__21112,itw,eval,in_the_wild/release_in_the_wild/21112.wav,0,bonafide,bonafide,bonafide,Ayn Rand,1.913,16000
+itw__21329,itw,eval,in_the_wild/release_in_the_wild/21329.wav,0,bonafide,bonafide,bonafide,Martin Luther King,1.28,16000
+itw__21332,itw,eval,in_the_wild/release_in_the_wild/21332.wav,0,bonafide,bonafide,bonafide,John Cleese,8.227,16000
+itw__21355,itw,eval,in_the_wild/release_in_the_wild/21355.wav,1,itw_spoof,itw_spoof,unknown,Billie Eilish,20.349,16000
+itw__21372,itw,eval,in_the_wild/release_in_the_wild/21372.wav,1,itw_spoof,itw_spoof,unknown,Nick Offerman,5.391,16000
+itw__21580,itw,eval,in_the_wild/release_in_the_wild/21580.wav,0,bonafide,bonafide,bonafide,Dwight Eisenhower,4.8320625,16000
+itw__21621,itw,eval,in_the_wild/release_in_the_wild/21621.wav,1,itw_spoof,itw_spoof,unknown,George W. Bush,1.18,16000
+itw__21639,itw,eval,in_the_wild/release_in_the_wild/21639.wav,1,itw_spoof,itw_spoof,unknown,William F. Buckley,5.3780625,16000
+itw__21808,itw,eval,in_the_wild/release_in_the_wild/21808.wav,1,itw_spoof,itw_spoof,unknown,Winston Churchill,15.8570625,16000
+itw__21812,itw,eval,in_the_wild/release_in_the_wild/21812.wav,0,bonafide,bonafide,bonafide,Bernie Sanders,1.7180625,16000
+itw__21818,itw,eval,in_the_wild/release_in_the_wild/21818.wav,1,itw_spoof,itw_spoof,unknown,Tucker Carlson,5.665,16000
+itw__21820,itw,eval,in_the_wild/release_in_the_wild/21820.wav,1,itw_spoof,itw_spoof,unknown,Tucker Carlson,6.004,16000
+itw__21859,itw,eval,in_the_wild/release_in_the_wild/21859.wav,1,itw_spoof,itw_spoof,unknown,Arnold Schwarzenegger,1.3330625,16000
+itw__21873,itw,eval,in_the_wild/release_in_the_wild/21873.wav,1,itw_spoof,itw_spoof,unknown,Dwight Eisenhower,15.121,16000
+itw__21966,itw,eval,in_the_wild/release_in_the_wild/21966.wav,1,itw_spoof,itw_spoof,unknown,Milton Friedman,1.348,16000
+itw__22157,itw,eval,in_the_wild/release_in_the_wild/22157.wav,1,itw_spoof,itw_spoof,unknown,Mark Zuckerberg,8.9190625,16000
+itw__22168,itw,eval,in_the_wild/release_in_the_wild/22168.wav,0,bonafide,bonafide,bonafide,Martin Luther King,3.4290625,16000
+itw__22217,itw,eval,in_the_wild/release_in_the_wild/22217.wav,1,itw_spoof,itw_spoof,unknown,Nick Offerman,4.854,16000
+itw__22231,itw,eval,in_the_wild/release_in_the_wild/22231.wav,1,itw_spoof,itw_spoof,unknown,George Carlin,7.05,16000
+itw__22266,itw,eval,in_the_wild/release_in_the_wild/22266.wav,0,bonafide,bonafide,bonafide,Alan Watts,1.2730625,16000
+itw__22322,itw,eval,in_the_wild/release_in_the_wild/22322.wav,0,bonafide,bonafide,bonafide,Christopher Hitchens,1.329,16000
+itw__22370,itw,eval,in_the_wild/release_in_the_wild/22370.wav,1,itw_spoof,itw_spoof,unknown,Richard Nixon,1.447,16000
+itw__22383,itw,eval,in_the_wild/release_in_the_wild/22383.wav,1,itw_spoof,itw_spoof,unknown,The Notorious B.I.G.,0.9570625,16000
+itw__22415,itw,eval,in_the_wild/release_in_the_wild/22415.wav,0,bonafide,bonafide,bonafide,Richard Nixon,1.627,16000
+itw__22541,itw,eval,in_the_wild/release_in_the_wild/22541.wav,1,itw_spoof,itw_spoof,unknown,Calvin Coolidge,3.4990625,16000
+itw__22605,itw,eval,in_the_wild/release_in_the_wild/22605.wav,1,itw_spoof,itw_spoof,unknown,Alec Guinness,1.963,16000
+itw__22720,itw,eval,in_the_wild/release_in_the_wild/22720.wav,1,itw_spoof,itw_spoof,unknown,Arnold Schwarzenegger,8.52,16000
+itw__22750,itw,eval,in_the_wild/release_in_the_wild/22750.wav,0,bonafide,bonafide,bonafide,Winston Churchill,2.6640625,16000
+itw__22833,itw,eval,in_the_wild/release_in_the_wild/22833.wav,1,itw_spoof,itw_spoof,unknown,Richard Nixon,2.8470625,16000
+itw__22849,itw,eval,in_the_wild/release_in_the_wild/22849.wav,1,itw_spoof,itw_spoof,unknown,Mr. Rogers,2.4120625,16000
+itw__22955,itw,eval,in_the_wild/release_in_the_wild/22955.wav,1,itw_spoof,itw_spoof,unknown,2Pac,13.9580625,16000
+itw__23022,itw,eval,in_the_wild/release_in_the_wild/23022.wav,1,itw_spoof,itw_spoof,unknown,William F. Buckley,1.483,16000
+itw__23201,itw,eval,in_the_wild/release_in_the_wild/23201.wav,1,itw_spoof,itw_spoof,unknown,Orson Welles,1.5760625,16000
+itw__23298,itw,eval,in_the_wild/release_in_the_wild/23298.wav,1,itw_spoof,itw_spoof,unknown,Gilbert Gottfried,6.6100625,16000
+itw__23397,itw,eval,in_the_wild/release_in_the_wild/23397.wav,0,bonafide,bonafide,bonafide,Scarlett Johansson,4.6440625,16000
+itw__23461,itw,eval,in_the_wild/release_in_the_wild/23461.wav,1,itw_spoof,itw_spoof,unknown,Bill Clinton,7.387,16000
+itw__23483,itw,eval,in_the_wild/release_in_the_wild/23483.wav,0,bonafide,bonafide,bonafide,Boris Johnson,2.813,16000
+itw__23521,itw,eval,in_the_wild/release_in_the_wild/23521.wav,1,itw_spoof,itw_spoof,unknown,Harry Truman,1.84,16000
+itw__23526,itw,eval,in_the_wild/release_in_the_wild/23526.wav,0,bonafide,bonafide,bonafide,Robert Kardashian,2.525,16000
+itw__23641,itw,eval,in_the_wild/release_in_the_wild/23641.wav,0,bonafide,bonafide,bonafide,Bob Ross,2.586,16000
+itw__23743,itw,eval,in_the_wild/release_in_the_wild/23743.wav,0,bonafide,bonafide,bonafide,Mr. Rogers,23.08,16000
+itw__23749,itw,eval,in_the_wild/release_in_the_wild/23749.wav,1,itw_spoof,itw_spoof,unknown,Alec Guinness,7.0910625,16000
+itw__23816,itw,eval,in_the_wild/release_in_the_wild/23816.wav,0,bonafide,bonafide,bonafide,JFK,2.862,16000
+itw__23940,itw,eval,in_the_wild/release_in_the_wild/23940.wav,0,bonafide,bonafide,bonafide,Bernie Sanders,1.209,16000
+itw__24105,itw,eval,in_the_wild/release_in_the_wild/24105.wav,1,itw_spoof,itw_spoof,unknown,Billie Eilish,1.001,16000
+itw__24140,itw,eval,in_the_wild/release_in_the_wild/24140.wav,0,bonafide,bonafide,bonafide,Norm MacDonald,7.3990625,16000
+itw__24142,itw,eval,in_the_wild/release_in_the_wild/24142.wav,1,itw_spoof,itw_spoof,unknown,Milton Friedman,4.6100625,16000
+itw__24179,itw,eval,in_the_wild/release_in_the_wild/24179.wav,1,itw_spoof,itw_spoof,unknown,2Pac,2.66,16000
+itw__24193,itw,eval,in_the_wild/release_in_the_wild/24193.wav,1,itw_spoof,itw_spoof,unknown,Dwight Eisenhower,3.201,16000
+itw__24230,itw,eval,in_the_wild/release_in_the_wild/24230.wav,1,itw_spoof,itw_spoof,unknown,William F. Buckley,5.1940625,16000
+itw__24247,itw,eval,in_the_wild/release_in_the_wild/24247.wav,0,bonafide,bonafide,bonafide,The Notorious B.I.G.,4.5450625,16000
+itw__24328,itw,eval,in_the_wild/release_in_the_wild/24328.wav,0,bonafide,bonafide,bonafide,Richard Nixon,5.0620625,16000
+itw__24418,itw,eval,in_the_wild/release_in_the_wild/24418.wav,1,itw_spoof,itw_spoof,unknown,Kanye West,3.1380625,16000
+itw__24429,itw,eval,in_the_wild/release_in_the_wild/24429.wav,1,itw_spoof,itw_spoof,unknown,The Notorious B.I.G.,1.483,16000
+itw__24434,itw,eval,in_the_wild/release_in_the_wild/24434.wav,0,bonafide,bonafide,bonafide,Christopher Hitchens,5.22,16000
+itw__24490,itw,eval,in_the_wild/release_in_the_wild/24490.wav,0,bonafide,bonafide,bonafide,Ayn Rand,4.247,16000
+itw__24514,itw,eval,in_the_wild/release_in_the_wild/24514.wav,1,itw_spoof,itw_spoof,unknown,George W. Bush,1.4560625,16000
+itw__24522,itw,eval,in_the_wild/release_in_the_wild/24522.wav,1,itw_spoof,itw_spoof,unknown,Barack Obama,6.079,16000
+itw__24555,itw,eval,in_the_wild/release_in_the_wild/24555.wav,1,itw_spoof,itw_spoof,unknown,John Cleese,23.3960625,16000
+itw__24593,itw,eval,in_the_wild/release_in_the_wild/24593.wav,1,itw_spoof,itw_spoof,unknown,2Pac,1.629,16000
+itw__24610,itw,eval,in_the_wild/release_in_the_wild/24610.wav,1,itw_spoof,itw_spoof,unknown,Frank Sinatra,3.2340625,16000
+itw__24645,itw,eval,in_the_wild/release_in_the_wild/24645.wav,0,bonafide,bonafide,bonafide,Calvin Coolidge,1.261,16000
+itw__24725,itw,eval,in_the_wild/release_in_the_wild/24725.wav,1,itw_spoof,itw_spoof,unknown,Ayn Rand,6.504,16000
+itw__24811,itw,eval,in_the_wild/release_in_the_wild/24811.wav,0,bonafide,bonafide,bonafide,Ronald Reagan,1.6770625,16000
+itw__24958,itw,eval,in_the_wild/release_in_the_wild/24958.wav,0,bonafide,bonafide,bonafide,Milton Friedman,11.327,16000
+itw__25046,itw,eval,in_the_wild/release_in_the_wild/25046.wav,0,bonafide,bonafide,bonafide,Richard Nixon,1.6350625,16000
+itw__25061,itw,eval,in_the_wild/release_in_the_wild/25061.wav,0,bonafide,bonafide,bonafide,George W. Bush,1.8690625,16000
+itw__25167,itw,eval,in_the_wild/release_in_the_wild/25167.wav,1,itw_spoof,itw_spoof,unknown,Queen Elizabeth II,2.083,16000
+itw__25218,itw,eval,in_the_wild/release_in_the_wild/25218.wav,1,itw_spoof,itw_spoof,unknown,Bernie Sanders,1.821,16000
+itw__25304,itw,eval,in_the_wild/release_in_the_wild/25304.wav,0,bonafide,bonafide,bonafide,Lyndon Johnson,3.052,16000
+itw__25408,itw,eval,in_the_wild/release_in_the_wild/25408.wav,0,bonafide,bonafide,bonafide,Kanye West,2.452,16000
+itw__25412,itw,eval,in_the_wild/release_in_the_wild/25412.wav,0,bonafide,bonafide,bonafide,Orson Welles,3.143,16000
+itw__25464,itw,eval,in_the_wild/release_in_the_wild/25464.wav,0,bonafide,bonafide,bonafide,Arnold Schwarzenegger,3.0120625,16000
+itw__25514,itw,eval,in_the_wild/release_in_the_wild/25514.wav,0,bonafide,bonafide,bonafide,Bill Burr,9.445,16000
+itw__25558,itw,eval,in_the_wild/release_in_the_wild/25558.wav,0,bonafide,bonafide,bonafide,Mark Zuckerberg,8.7590625,16000
+itw__25581,itw,eval,in_the_wild/release_in_the_wild/25581.wav,0,bonafide,bonafide,bonafide,Bill Burr,3.0960625,16000
+itw__25658,itw,eval,in_the_wild/release_in_the_wild/25658.wav,0,bonafide,bonafide,bonafide,JFK,2.0750625,16000
+itw__25729,itw,eval,in_the_wild/release_in_the_wild/25729.wav,1,itw_spoof,itw_spoof,unknown,Donald Trump,3.485,16000
+itw__25749,itw,eval,in_the_wild/release_in_the_wild/25749.wav,1,itw_spoof,itw_spoof,unknown,Richard Nixon,2.0750625,16000
+itw__25761,itw,eval,in_the_wild/release_in_the_wild/25761.wav,1,itw_spoof,itw_spoof,unknown,Mark Zuckerberg,8.0930625,16000
+itw__25771,itw,eval,in_the_wild/release_in_the_wild/25771.wav,1,itw_spoof,itw_spoof,unknown,Malcolm X,2.854,16000
+itw__25813,itw,eval,in_the_wild/release_in_the_wild/25813.wav,0,bonafide,bonafide,bonafide,Tucker Carlson,4.473,16000
+itw__25818,itw,eval,in_the_wild/release_in_the_wild/25818.wav,1,itw_spoof,itw_spoof,unknown,Christopher Hitchens,4.7970625,16000
+itw__25844,itw,eval,in_the_wild/release_in_the_wild/25844.wav,0,bonafide,bonafide,bonafide,Richard Nixon,1.86,16000
+itw__25903,itw,eval,in_the_wild/release_in_the_wild/25903.wav,0,bonafide,bonafide,bonafide,Kamala Harris,4.6080625,16000
+itw__26016,itw,eval,in_the_wild/release_in_the_wild/26016.wav,1,itw_spoof,itw_spoof,unknown,Norm MacDonald,5.3010625,16000
+itw__26063,itw,eval,in_the_wild/release_in_the_wild/26063.wav,1,itw_spoof,itw_spoof,unknown,Dave Chappelle,1.9350625,16000
+itw__26219,itw,eval,in_the_wild/release_in_the_wild/26219.wav,1,itw_spoof,itw_spoof,unknown,Ronald Reagan,4.1850625,16000
+itw__26297,itw,eval,in_the_wild/release_in_the_wild/26297.wav,1,itw_spoof,itw_spoof,unknown,Bob Ross,12.882,16000
+itw__26440,itw,eval,in_the_wild/release_in_the_wild/26440.wav,1,itw_spoof,itw_spoof,unknown,Mark Zuckerberg,5.7050625,16000
+itw__26450,itw,eval,in_the_wild/release_in_the_wild/26450.wav,0,bonafide,bonafide,bonafide,Malcolm X,4.6770625,16000
+itw__26484,itw,eval,in_the_wild/release_in_the_wild/26484.wav,1,itw_spoof,itw_spoof,unknown,Frank Sinatra,13.9410625,16000
+itw__26559,itw,eval,in_the_wild/release_in_the_wild/26559.wav,1,itw_spoof,itw_spoof,unknown,Adam Driver,1.0770625,16000
+itw__26570,itw,eval,in_the_wild/release_in_the_wild/26570.wav,0,bonafide,bonafide,bonafide,Harry Truman,2.6850625,16000
+itw__26743,itw,eval,in_the_wild/release_in_the_wild/26743.wav,0,bonafide,bonafide,bonafide,Louis Farrakhan,2.503,16000
+itw__26835,itw,eval,in_the_wild/release_in_the_wild/26835.wav,0,bonafide,bonafide,bonafide,Gilbert Gottfried,22.092,16000
+itw__26871,itw,eval,in_the_wild/release_in_the_wild/26871.wav,0,bonafide,bonafide,bonafide,Kamala Harris,8.242,16000
+itw__26874,itw,eval,in_the_wild/release_in_the_wild/26874.wav,1,itw_spoof,itw_spoof,unknown,Louis Farrakhan,2.1120625,16000
+itw__26895,itw,eval,in_the_wild/release_in_the_wild/26895.wav,1,itw_spoof,itw_spoof,unknown,JFK,3.6190625,16000
+itw__26923,itw,eval,in_the_wild/release_in_the_wild/26923.wav,1,itw_spoof,itw_spoof,unknown,Calvin Coolidge,2.469,16000
+itw__26949,itw,eval,in_the_wild/release_in_the_wild/26949.wav,0,bonafide,bonafide,bonafide,Dave Chappelle,10.6270625,16000
+itw__26954,itw,eval,in_the_wild/release_in_the_wild/26954.wav,1,itw_spoof,itw_spoof,unknown,Malcolm X,2.441,16000
+itw__26975,itw,eval,in_the_wild/release_in_the_wild/26975.wav,0,bonafide,bonafide,bonafide,Alec Guinness,3.176,16000
+itw__27061,itw,eval,in_the_wild/release_in_the_wild/27061.wav,0,bonafide,bonafide,bonafide,Bernie Sanders,4.501,16000
+itw__27166,itw,eval,in_the_wild/release_in_the_wild/27166.wav,0,bonafide,bonafide,bonafide,Malcolm X,6.632,16000
+itw__27306,itw,eval,in_the_wild/release_in_the_wild/27306.wav,0,bonafide,bonafide,bonafide,Dave Chappelle,8.9590625,16000
+itw__27461,itw,eval,in_the_wild/release_in_the_wild/27461.wav,0,bonafide,bonafide,bonafide,Arnold Schwarzenegger,2.3830625,16000
+itw__27463,itw,eval,in_the_wild/release_in_the_wild/27463.wav,0,bonafide,bonafide,bonafide,Louis Farrakhan,2.1310625,16000
+itw__27510,itw,eval,in_the_wild/release_in_the_wild/27510.wav,0,bonafide,bonafide,bonafide,Alan Watts,1.05,16000
+itw__27526,itw,eval,in_the_wild/release_in_the_wild/27526.wav,0,bonafide,bonafide,bonafide,Harry Truman,2.2890625,16000
+itw__27567,itw,eval,in_the_wild/release_in_the_wild/27567.wav,0,bonafide,bonafide,bonafide,Donald Trump,1.7730625,16000
+itw__27713,itw,eval,in_the_wild/release_in_the_wild/27713.wav,0,bonafide,bonafide,bonafide,Donald Trump,3.826,16000
+itw__27798,itw,eval,in_the_wild/release_in_the_wild/27798.wav,0,bonafide,bonafide,bonafide,Boris Johnson,5.609,16000
+itw__27816,itw,eval,in_the_wild/release_in_the_wild/27816.wav,0,bonafide,bonafide,bonafide,Bill Burr,2.0180625,16000
+itw__27869,itw,eval,in_the_wild/release_in_the_wild/27869.wav,1,itw_spoof,itw_spoof,unknown,Alec Guinness,15.287,16000
+itw__27970,itw,eval,in_the_wild/release_in_the_wild/27970.wav,1,itw_spoof,itw_spoof,unknown,Boris Johnson,1.3540625,16000
+itw__28006,itw,eval,in_the_wild/release_in_the_wild/28006.wav,1,itw_spoof,itw_spoof,unknown,Alan Watts,2.4570625,16000
+itw__28015,itw,eval,in_the_wild/release_in_the_wild/28015.wav,1,itw_spoof,itw_spoof,unknown,Kamala Harris,12.19,16000
+itw__28062,itw,eval,in_the_wild/release_in_the_wild/28062.wav,1,itw_spoof,itw_spoof,unknown,Louis C.K.,14.911,16000
+itw__28184,itw,eval,in_the_wild/release_in_the_wild/28184.wav,1,itw_spoof,itw_spoof,unknown,Bill Clinton,3.266,16000
+itw__28247,itw,eval,in_the_wild/release_in_the_wild/28247.wav,0,bonafide,bonafide,bonafide,Jimmy Carter,2.1490625,16000
+itw__28267,itw,eval,in_the_wild/release_in_the_wild/28267.wav,1,itw_spoof,itw_spoof,unknown,Milton Friedman,3.0380625,16000
+itw__28345,itw,eval,in_the_wild/release_in_the_wild/28345.wav,0,bonafide,bonafide,bonafide,Calvin Coolidge,7.9340625,16000
+itw__28363,itw,eval,in_the_wild/release_in_the_wild/28363.wav,0,bonafide,bonafide,bonafide,Bill Clinton,2.9930625,16000
+itw__28372,itw,eval,in_the_wild/release_in_the_wild/28372.wav,0,bonafide,bonafide,bonafide,Barack Obama,3.924,16000
+itw__28406,itw,eval,in_the_wild/release_in_the_wild/28406.wav,0,bonafide,bonafide,bonafide,Jimmy Carter,2.469,16000
+itw__28422,itw,eval,in_the_wild/release_in_the_wild/28422.wav,1,itw_spoof,itw_spoof,unknown,Kanye West,21.543,16000
+itw__28523,itw,eval,in_the_wild/release_in_the_wild/28523.wav,0,bonafide,bonafide,bonafide,Alec Guinness,1.5980625,16000
+itw__28668,itw,eval,in_the_wild/release_in_the_wild/28668.wav,1,itw_spoof,itw_spoof,unknown,Queen Elizabeth II,2.0270625,16000
+itw__28700,itw,eval,in_the_wild/release_in_the_wild/28700.wav,0,bonafide,bonafide,bonafide,Ronald Reagan,3.0990625,16000
+itw__28723,itw,eval,in_the_wild/release_in_the_wild/28723.wav,1,itw_spoof,itw_spoof,unknown,Ronald Reagan,2.0040625,16000
+itw__28740,itw,eval,in_the_wild/release_in_the_wild/28740.wav,0,bonafide,bonafide,bonafide,Nick Offerman,1.644,16000
+itw__28742,itw,eval,in_the_wild/release_in_the_wild/28742.wav,1,itw_spoof,itw_spoof,unknown,Kanye West,7.9500625,16000
+itw__28753,itw,eval,in_the_wild/release_in_the_wild/28753.wav,1,itw_spoof,itw_spoof,unknown,Mitch Hedberg,1.924,16000
+itw__28899,itw,eval,in_the_wild/release_in_the_wild/28899.wav,0,bonafide,bonafide,bonafide,Robert Kardashian,5.3950625,16000
+itw__29030,itw,eval,in_the_wild/release_in_the_wild/29030.wav,0,bonafide,bonafide,bonafide,Louis C.K.,1.5290625,16000
+itw__29061,itw,eval,in_the_wild/release_in_the_wild/29061.wav,0,bonafide,bonafide,bonafide,Bill Burr,1.3630625,16000
+itw__29064,itw,eval,in_the_wild/release_in_the_wild/29064.wav,0,bonafide,bonafide,bonafide,FDR,3.325,16000
+itw__29142,itw,eval,in_the_wild/release_in_the_wild/29142.wav,0,bonafide,bonafide,bonafide,Alexandria Ocasio-Cortez,1.6980625,16000
+itw__29147,itw,eval,in_the_wild/release_in_the_wild/29147.wav,1,itw_spoof,itw_spoof,unknown,Queen Elizabeth II,1.644,16000
+itw__29167,itw,eval,in_the_wild/release_in_the_wild/29167.wav,1,itw_spoof,itw_spoof,unknown,Norm MacDonald,4.8570625,16000
+itw__29191,itw,eval,in_the_wild/release_in_the_wild/29191.wav,1,itw_spoof,itw_spoof,unknown,Boris Johnson,3.047,16000
+itw__29208,itw,eval,in_the_wild/release_in_the_wild/29208.wav,0,bonafide,bonafide,bonafide,FDR,4.168,16000
+itw__29264,itw,eval,in_the_wild/release_in_the_wild/29264.wav,1,itw_spoof,itw_spoof,unknown,The Notorious B.I.G.,16.329,16000
+itw__29270,itw,eval,in_the_wild/release_in_the_wild/29270.wav,1,itw_spoof,itw_spoof,unknown,Bill Burr,10.5580625,16000
+itw__29274,itw,eval,in_the_wild/release_in_the_wild/29274.wav,0,bonafide,bonafide,bonafide,Louis Farrakhan,4.0390625,16000
+itw__29344,itw,eval,in_the_wild/release_in_the_wild/29344.wav,1,itw_spoof,itw_spoof,unknown,Alexandria Ocasio-Cortez,7.86,16000
+itw__29379,itw,eval,in_the_wild/release_in_the_wild/29379.wav,1,itw_spoof,itw_spoof,unknown,Gilbert Gottfried,6.2560625,16000
+itw__29785,itw,eval,in_the_wild/release_in_the_wild/29785.wav,1,itw_spoof,itw_spoof,unknown,Jeff Goldblum,17.545,16000
+itw__29837,itw,eval,in_the_wild/release_in_the_wild/29837.wav,0,bonafide,bonafide,bonafide,Dave Chappelle,1.7190625,16000
+itw__29972,itw,eval,in_the_wild/release_in_the_wild/29972.wav,0,bonafide,bonafide,bonafide,Malcolm X,4.729,16000
+itw__29975,itw,eval,in_the_wild/release_in_the_wild/29975.wav,0,bonafide,bonafide,bonafide,Louis C.K.,10.6760625,16000
+itw__30036,itw,eval,in_the_wild/release_in_the_wild/30036.wav,0,bonafide,bonafide,bonafide,Dave Chappelle,3.4360625,16000
+itw__30085,itw,eval,in_the_wild/release_in_the_wild/30085.wav,1,itw_spoof,itw_spoof,unknown,John Cleese,12.961,16000
+itw__30144,itw,eval,in_the_wild/release_in_the_wild/30144.wav,0,bonafide,bonafide,bonafide,Alexandria Ocasio-Cortez,3.414,16000
+itw__30199,itw,eval,in_the_wild/release_in_the_wild/30199.wav,0,bonafide,bonafide,bonafide,Mark Zuckerberg,5.2640625,16000
+itw__30213,itw,eval,in_the_wild/release_in_the_wild/30213.wav,0,bonafide,bonafide,bonafide,Bernie Sanders,2.204,16000
+itw__30238,itw,eval,in_the_wild/release_in_the_wild/30238.wav,0,bonafide,bonafide,bonafide,Tucker Carlson,3.6440625,16000
+itw__30298,itw,eval,in_the_wild/release_in_the_wild/30298.wav,1,itw_spoof,itw_spoof,unknown,Harry Truman,21.222,16000
+itw__30443,itw,eval,in_the_wild/release_in_the_wild/30443.wav,0,bonafide,bonafide,bonafide,Richard Nixon,5.184,16000
+itw__30477,itw,eval,in_the_wild/release_in_the_wild/30477.wav,1,itw_spoof,itw_spoof,unknown,Alexandria Ocasio-Cortez,5.706,16000
+itw__30510,itw,eval,in_the_wild/release_in_the_wild/30510.wav,1,itw_spoof,itw_spoof,unknown,Arnold Schwarzenegger,7.059,16000
+itw__30604,itw,eval,in_the_wild/release_in_the_wild/30604.wav,0,bonafide,bonafide,bonafide,Winston Churchill,4.029,16000
+itw__30633,itw,eval,in_the_wild/release_in_the_wild/30633.wav,0,bonafide,bonafide,bonafide,Mark Zuckerberg,11.0050625,16000
+itw__30735,itw,eval,in_the_wild/release_in_the_wild/30735.wav,1,itw_spoof,itw_spoof,unknown,Billie Eilish,16.489,16000
+itw__30784,itw,eval,in_the_wild/release_in_the_wild/30784.wav,1,itw_spoof,itw_spoof,unknown,Kanye West,4.4280625,16000
+itw__30846,itw,eval,in_the_wild/release_in_the_wild/30846.wav,1,itw_spoof,itw_spoof,unknown,JFK,3.3530625,16000
+itw__30942,itw,eval,in_the_wild/release_in_the_wild/30942.wav,1,itw_spoof,itw_spoof,unknown,2Pac,4.133,16000
+itw__31040,itw,eval,in_the_wild/release_in_the_wild/31040.wav,0,bonafide,bonafide,bonafide,William F. Buckley,14.1650625,16000
+itw__31080,itw,eval,in_the_wild/release_in_the_wild/31080.wav,1,itw_spoof,itw_spoof,unknown,Kanye West,0.9930625,16000
+itw__31218,itw,eval,in_the_wild/release_in_the_wild/31218.wav,1,itw_spoof,itw_spoof,unknown,Barack Obama,2.9160625,16000
+itw__31253,itw,eval,in_the_wild/release_in_the_wild/31253.wav,1,itw_spoof,itw_spoof,unknown,Calvin Coolidge,21.1760625,16000
+itw__31254,itw,eval,in_the_wild/release_in_the_wild/31254.wav,0,bonafide,bonafide,bonafide,Bernie Sanders,2.0140625,16000
+itw__31291,itw,eval,in_the_wild/release_in_the_wild/31291.wav,0,bonafide,bonafide,bonafide,Kanye West,1.665,16000
+itw__31296,itw,eval,in_the_wild/release_in_the_wild/31296.wav,1,itw_spoof,itw_spoof,unknown,Ronald Reagan,7.716,16000
+itw__31322,itw,eval,in_the_wild/release_in_the_wild/31322.wav,1,itw_spoof,itw_spoof,unknown,Louis Farrakhan,4.11,16000
+itw__31376,itw,eval,in_the_wild/release_in_the_wild/31376.wav,1,itw_spoof,itw_spoof,unknown,Scarlett Johansson,8.1330625,16000
+itw__31475,itw,eval,in_the_wild/release_in_the_wild/31475.wav,0,bonafide,bonafide,bonafide,Nick Offerman,6.61,16000
+itw__31552,itw,eval,in_the_wild/release_in_the_wild/31552.wav,0,bonafide,bonafide,bonafide,Bob Ross,6.044,16000
+itw__31569,itw,eval,in_the_wild/release_in_the_wild/31569.wav,0,bonafide,bonafide,bonafide,Nelson Mandela,3.6370625,16000
+itw__31611,itw,eval,in_the_wild/release_in_the_wild/31611.wav,0,bonafide,bonafide,bonafide,Frank Sinatra,8.784,16000
+itw__31636,itw,eval,in_the_wild/release_in_the_wild/31636.wav,1,itw_spoof,itw_spoof,unknown,Frank Sinatra,11.3190625,16000
+itw__31773,itw,eval,in_the_wild/release_in_the_wild/31773.wav,1,itw_spoof,itw_spoof,unknown,Alan Watts,2.9700625,16000

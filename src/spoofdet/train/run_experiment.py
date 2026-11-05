@@ -7,7 +7,8 @@ import subprocess
 import sys
 
 from ..common import paths
-from ..common.io import load_yaml
+from ..common.io import load_yaml, read_manifest
+from ..data.features import FeatureStore
 from .predict import predict_split
 from .train import set_by_path
 
@@ -22,7 +23,14 @@ def main():
     pdir = paths.SPLITS / cfg["protocol"]
     jobs = {n: pdir / f"{n}.csv" for n in ("val", "test", "test_seen", "test_unseen")}
     xd = paths.SPLITS / "P0_official"
-    jobs.update({"itw": xd / "test_itw.csv", "la21": xd / "test_la21.csv", "df21": xd / "test_df21.csv"})
+    cross = {"itw": xd / "test_itw.csv", "la21": xd / "test_la21.csv", "df21": xd / "test_df21.csv"}
+    store = FeatureStore(paths.FEATURES / cfg["feat_id"])
+    for name, f in cross.items():
+        if f.exists():
+            if all(u in store for u in read_manifest(f).utt_id):
+                jobs[name] = f
+            else:                                        # ablation stores hold only the P1 union
+                print(f"skip {name}: not in feature store {cfg['feat_id']}")
     out = paths.SCORES / exp_id; out.mkdir(parents=True, exist_ok=True)
     for name, f in jobs.items():
         if f.exists():

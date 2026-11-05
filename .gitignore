@@ -1,9 +1,10 @@
 __pycache__/
 *.pyc
 .venv/
-data/
+/data/
 checkpoints/
 results/scores/
 *.egg-info/
 .ipynb_checkpoints/
 .DS_Store
+logs/

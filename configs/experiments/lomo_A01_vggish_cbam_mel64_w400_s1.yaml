@@ -1,0 +1,20 @@
+exp_id: lomo_A01_vggish_cbam_mel64_w400_s1
+model:
+  name: vggish_cbam
+  kwargs: {}
+feat_id: mel64_w400
+protocol: P1_lomo/A01
+norm: utt
+augment:
+  freq_mask: 8
+  time_mask: 40
+  n_masks: 2
+train:
+  epochs: 30
+  batch_size: 64
+  lr: 0.001
+  weight_decay: 0.0001
+  patience: 6
+  seed: 1
+  amp: true
+  num_workers: 2

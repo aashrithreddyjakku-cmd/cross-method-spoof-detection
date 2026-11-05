@@ -1,0 +1,72 @@
+rows: 4780  unique utt_id: True
+
+-- counts per dataset/partition/label
+ dataset  partition  label
+itw      eval       0         300
+                    1         300
+la19     dev        0         300
+                    1         360
+         eval       0         900
+                    1        1300
+         train      0         600
+                    1         720
+
+-- la19 attacks per partition
+ partition  dev  eval  train
+attack_id                  
+A01         60     0    120
+A02         60     0    120
+A03         60     0    120
+A04         60     0    120
+A05         60     0    120
+A06         60     0    120
+A07          0   100      0
+A08          0   100      0
+A09          0   100      0
+A10          0   100      0
+A11          0   100      0
+A12          0   100      0
+A13          0   100      0
+A14          0   100      0
+A15          0   100      0
+A16          0   100      0
+A17          0   100      0
+A18          0   100      0
+A19          0   100      0
+bonafide   300   900    600
+
+-- orig_sr
+ dataset  orig_sr
+itw      16000       600
+la19     16000      4180
+
+-- duration_s
+           count      mean       std      min       25%       50%       75%        max
+dataset                                                                              
+itw       600.0  5.507809  4.872399  0.74400  2.256797  3.773000  6.978797  24.299063
+la19     4180.0  3.311979  1.323285  0.65425  2.409609  3.110344  3.978625  11.193500
+NaN durations: 0
+
+-- method_family
+ dataset  method_family        
+itw      bonafide                  300
+         unknown                   300
+la19     bonafide                 1800
+         source_filter_vocoder     940
+         waveform_modification     760
+         neural_vocoder            580
+         griffin_lim               100
+
+-- speakers per dataset
+ dataset
+itw      54
+la19    107
+
+-- speakers per la19 partition
+ partition
+dev      20
+eval     67
+train    20
+
+PROBLEMS:
+none
