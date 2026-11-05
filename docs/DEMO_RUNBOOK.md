@@ -8,12 +8,13 @@ No GPU is needed, and each clip takes a few seconds.
 |---|---|
 | Project code (branch `b/train`: the work of A, B and C together) | `Study\ML\Project\cross-method-spoof-detection` |
 | One-click launcher | `start_demo.bat` in that folder |
-| Model used in the demo (LCNN, official protocol) | `checkpoints\p0_lcnn_mel64_w400_s1\best.pt` |
+| Model used in the demo (VGGish-CBAM, official protocol, seed 1) | `checkpoints\p0_vggish_cbam_mel64_w400_s1\best.pt` |
 | Demo clips | `C:\spoofdet-data\demo_clips\` |
 | Backup screenshots of every clip | `C:\spoofdet-data\demo_clips\backup_screens\` |
 | Result figures | `results\figures\` |
 | Result tables | `results\tables\` |
-| Written report | `report\Results_Discussion_Inference.docx` |
+| Experiment log (all 116 runs) | `docs\EXPERIMENT_LOG.md` |
+| Older written report (October numbers, **do not quote it**) | `report\Results_Discussion_Inference.docx` |
 
 ## Starting the demo
 1. In File Explorer, open the project folder and double-click `start_demo.bat`.
@@ -36,7 +37,9 @@ Closing the black window stops the app. If the browser shows nothing, the black 
 | `2_tts_griffinlim_A11_correct.flac` | Text-to-speech, Griffin-Lim | SPOOF, 0.980 | Generator never seen in training |
 | `3_tts_neural_A10_correct.flac` | Text-to-speech, WaveRNN | SPOOF, 0.979 | Neural vocoder never seen in training |
 | `4_vc_A17_MISSED.flac` | Voice conversion of real speech | BONA FIDE, 0.020 (**wrong, on purpose**) | Our main failure mode |
-| `5_inthewild_real_FALSE_ALARM.wav` | Real clip from In-the-Wild | SPOOF, 0.981 (**wrong, on purpose**) | Real-world audio causes false alarms |
+| `5_inthewild_real_FALSE_ALARM.wav` | Real clip from In-the-Wild | SPOOF, 0.980 (**wrong, on purpose**) | Real-world audio causes false alarms |
+
+The threshold slider starts at 0.22, the value chosen on validation data.
 
 Clips 1-3 show it working and clips 4-5 show the research finding. Say that 4 and 5 were chosen because they fail.
 **These five were hand-picked from the test results, so they do not show the overall accuracy.** Say that too.
@@ -54,7 +57,7 @@ voices in public. Analyse it without playing it.
 
 ### Avoid the live microphone unless you present it as a risk
 The app can record, but we have not tested that. A laptop-mic recording is noisy, and on noisy real-world audio this model
-flags 81% of genuine clips as fake. Your own voice may well come out as SPOOF. If someone asks to try it, say that first.
+flags about 90% of genuine clips as fake. Your own voice may well come out as SPOOF. If someone asks to try it, say that first.
 
 ## If something goes wrong
 | Problem | Fix |
@@ -70,19 +73,19 @@ flags 81% of genuine clips as fake. Your own voice may well come out as SPOOF. I
 ## Figures to show (all in `results\figures\`)
 | File | Shows |
 |---|---|
-| `report_per_attack.png` | Error per attack: most are low, A17/A18/A19 are high |
-| `report_lofo.png` | Seen vs held-out family |
-| `gap_p1_lofo.png` | LCNN generalisation gap |
-| `report_roc.png` | ROC curves, ASVspoof vs In-the-Wild |
-| `report_trim_ablation.png` | Effect of removing silence |
-| `xai_lofo_waveform_modification_lcnn_mel64_w400_s1_A17_gradcam.png` | Grad-CAM on a held-out attack |
+| `per_method_p0_vggish_cbam_mel64_w400_s1_test.png` | Error per attack, seed 1: most are low, A17 is about 30% (28% across three seeds) |
+| `gap_p1_lofo.png` | Generalisation gap per held-out family |
+| `lomo_heatmap.png` | Unseen error for each held-out attack |
+| `roc_det_p0_itw.png` | ROC curves on In-the-Wild, one seed per model |
+| `ablation.png` | Effect of silence removal and other settings |
+| `xai_lofo_waveform_modification_vggish_cbam_mel64_w400_s1_A17_gradcam.png` | Grad-CAM on a held-out attack (only if asked) |
 
 ## Re-running the pipeline (only if asked; not needed for the demo)
 In Git Bash, from the project folder:
 ```bash
 source ~/.venvs/spoofdet/Scripts/activate
 export SPOOFDET_DATA=/c/spoofdet-data PYTHONIOENCODING=utf-8
-python -m pytest -q tests                 # 71 passed, about 1 min
+python -m pytest -q tests                 # 89 passed, about 2 min
 bash scripts/smoke_test.sh                # SMOKE TEST PASSED, full pipeline on fake data, about 2 min
 python scripts/check_splits.py            # ALL SPLIT CHECKS PASSED: no speaker or method leakage
 python -m spoofdet.eval.evaluate --all    # metrics from the score files
@@ -93,10 +96,12 @@ The pipeline order is: raw audio → `build_manifest.py` → `make_splits.py` �
 `spoofdet.train.run_experiment` → `evaluate` → `aggregate` → `make_figures.py` / `run_xai.py` → demo.
 
 ## What was and was not done (know this before questions)
-**Done:** data pipeline on a seeded subset (4,180 ASVspoof + 600 In-the-Wild clips), LCNN and SmallCNN on the official
-protocol, MFCC + logistic regression and MFCC + SVM baselines, leave-one-family-out for all 4 families with the SVM and for 2
-families with the LCNN, silence-trim comparison on the SVM, model profiling, Grad-CAM and band occlusion, working demo.
+**Done (116 runs, 104 of them CNNs, trained on a Kaggle T4 GPU in 87 minutes):** data pipeline on a seeded subset (4,180
+ASVspoof + 600 In-the-Wild clips); SmallCNN, LCNN, ResNet-18 and VGGish-CBAM on the official protocol with 3 seeds each; MFCC +
+logistic regression and MFCC + SVM baselines; leave-one-family-out for all 4 families (VGGish-CBAM 3 seeds, SmallCNN and SVM 1);
+leave-one-method-out for all 17 attack groups with VGGish-CBAM (8 of them with 3 seeds, and with SmallCNN too); 33 ablation runs
+(1 seed, 3 families); training on all attacks as a reference; silence-trim comparison; model profiling; Grad-CAM and band
+occlusion on 21 models; working demo.
 
-**Not done:** the full dataset; training ResNet-18 or VGGish-CBAM (only profiled for size and speed); leave-one-method-out
-runs; multiple seeds (all results are one seed); the mel-band, window and normalisation ablations with CNNs; ASVspoof 2021;
-wav2vec2.
+**Not done:** the full dataset; ASVspoof 2021; wav2vec2; LCNN and ResNet-18 beyond the official protocol and In-the-Wild. The
+written report still has the October numbers.

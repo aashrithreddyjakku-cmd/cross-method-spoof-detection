@@ -1,5 +1,5 @@
 """Pick demo clips from real test scores and check that live inference reproduces them.
-  python scripts/prepare_demo.py [--exp p0_lcnn_mel64_w400_s1] [--out <folder>]
+  python scripts/prepare_demo.py [--exp p0_vggish_cbam_mel64_w400_s1] [--out <folder>]
 Copies audio to <SPOOFDET_DATA>/demo_clips (never into git: dataset licence) and writes clips.csv + threshold.txt there.
 """
 import argparse
@@ -19,7 +19,7 @@ def nearest(df, target, n=1):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--exp", default="p0_lcnn_mel64_w400_s1")
+    ap.add_argument("--exp", default="p0_vggish_cbam_mel64_w400_s1")
     ap.add_argument("--out", default=str(paths.DATA / "demo_clips"))
     a = ap.parse_args()
     sc = paths.SCORES / a.exp

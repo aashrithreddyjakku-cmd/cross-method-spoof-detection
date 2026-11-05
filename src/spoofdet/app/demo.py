@@ -135,7 +135,7 @@ def main():
     parser.add_argument("--threshold", type=float, default=None,
                         help="decision threshold (default: EER threshold on the experiment's val.csv)")
     args = parser.parse_args()
-    build_app(args.ckpt, args.device, args.threshold).launch(share=args.share)
+    build_app(args.ckpt, args.device, args.threshold).launch(share=args.share, footer_links=["api", "settings"])
 
 
 if __name__ == "__main__":

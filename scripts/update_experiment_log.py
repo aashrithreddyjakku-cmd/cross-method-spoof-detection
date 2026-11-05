@@ -20,7 +20,7 @@ for d in sorted(p for p in paths.CKPT.iterdir() if (p / "config.yaml").exists())
         seed=c["train"]["seed"], epochs_run=len(log) if log is not None else "-",
         best_val_eer=f"{100 * log.val_eer.min():.2f}%" if log is not None else "-",
         train_min=f"{log.seconds.sum() / 60:.1f}" if log is not None else "-",
-        where=f"{info.get('device', 'cpu')} (local)", commit=info.get("commit", "-"), scored="yes" if done else "NO"))
+        where=f"{info.get('device', 'cpu')} ({'Kaggle' if info.get('device') == 'cuda' else 'local'})", commit=info.get("commit", "-"), scored="yes" if done else "NO"))
 head = "# Experiment log  (Member B owns; rebuilt by scripts/update_experiment_log.py)\n\n"
 out = paths.ROOT / "docs" / "EXPERIMENT_LOG.md"
 out.write_text(head + pd.DataFrame(rows).to_markdown(index=False) + "\n", encoding="utf-8")

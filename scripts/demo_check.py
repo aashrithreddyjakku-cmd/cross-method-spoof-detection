@@ -8,8 +8,8 @@ import pandas as pd
 from spoofdet.common import paths
 from spoofdet.infer import Detector
 
-EXP = "p0_lcnn_mel64_w400_s1"
-BACKUP = paths.DATA / "backup_2026-10-20" / "checkpoints" / EXP / "best.pt"
+EXP = "p0_vggish_cbam_mel64_w400_s1"
+BACKUP = paths.DATA / "backup_2026-10-20" / "checkpoints" / "p0_lcnn_mel64_w400_s1" / "best.pt"
 FIGURES = ["roc_det_p0_test.png", "roc_det_p0_itw.png", "gap_p1_lofo.png", "lofo_heatmap.png"]
 bad = []
 
